@@ -13,8 +13,23 @@
 		670BA82A152024F80063ADE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 670BA828152024F80063ADE0 /* InfoPlist.strings */; };
 		670BA82C152024F80063ADE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670BA82B152024F80063ADE0 /* main.m */; };
 		670BA830152024F80063ADE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670BA82F152024F80063ADE0 /* AppDelegate.m */; };
-		670BA833152024F80063ADE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670BA832152024F80063ADE0 /* ViewController.m */; };
-		670BA836152024F80063ADE0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BA834152024F80063ADE0 /* ViewController.xib */; };
+		6784379315265210009744CC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6784379115265210009744CC /* Model.xcdatamodeld */; };
+		6784379615265249009744CC /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784379515265249009744CC /* Users.m */; };
+		67843836152666F2009744CC /* textfield_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 67843835152666F2009744CC /* textfield_bg.png */; };
+		678439B31526AE95009744CC /* register_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B21526AE95009744CC /* register_bg.png */; };
+		678439B51526B9EE009744CC /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B41526B9EE009744CC /* textfield.png */; };
+		678439C71527CDED009744CC /* CoreDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 678439C61527CDED009744CC /* CoreDataAccess.m */; };
+		67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3BB1527FA7D00F74374 /* ViewController.xib */; };
+		67BBD3C41527FCA900F74374 /* startMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3C21527FCA900F74374 /* startMenu.m */; };
+		67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3C31527FCA900F74374 /* startMenu.xib */; };
+		67BBD3DE15280B0900F74374 /* Master.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3DC15280B0900F74374 /* Master.m */; };
+		67BBD3DF15280B0900F74374 /* Master.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3DD15280B0900F74374 /* Master.xib */; };
+		67BBD3E215280B3E00F74374 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3E115280B3E00F74374 /* LeftView.m */; };
+		67BBD3E915280FA700F74374 /* RightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3E715280FA600F74374 /* RightView.m */; };
+		67BBD3EA15280FA700F74374 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3E815280FA700F74374 /* RightView.xib */; };
+		67BEDE931523F402000360EC /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BEDE911523F402000360EC /* Register.m */; };
+		67BEDE941523F402000360EC /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BEDE921523F402000360EC /* Register.xib */; };
+		67BEDEA81523FDA2000360EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BEDEA71523FDA2000360EC /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +37,36 @@
 		670BA81F152024F80063ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		670BA821152024F80063ADE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		670BA823152024F80063ADE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		670BA827152024F80063ADE0 /* Instrument-Info.plist */ = {isa = PBXFileReference; path = "Instrument-Info.plist"; sourceTree = "<group>"; };
+		670BA827152024F80063ADE0 /* Instrument-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Instrument-Info.plist"; sourceTree = "<group>"; };
 		670BA829152024F80063ADE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		670BA82B152024F80063ADE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		670BA82D152024F80063ADE0 /* Instrument-Prefix.pch */ = {isa = PBXFileReference; path = "Instrument-Prefix.pch"; sourceTree = "<group>"; };
-		670BA82E152024F80063ADE0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		670BA82D152024F80063ADE0 /* Instrument-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instrument-Prefix.pch"; sourceTree = "<group>"; };
+		670BA82E152024F80063ADE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		670BA82F152024F80063ADE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		670BA831152024F80063ADE0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		670BA832152024F80063ADE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		670BA835152024F80063ADE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6784379215265210009744CC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6784379415265249009744CC /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		6784379515265249009744CC /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		67843835152666F2009744CC /* textfield_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield_bg.png; path = ../textfield_bg.png; sourceTree = "<group>"; };
+		678439B21526AE95009744CC /* register_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = register_bg.png; path = ../register_bg.png; sourceTree = "<group>"; };
+		678439B41526B9EE009744CC /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield.png; path = ../textfield.png; sourceTree = "<group>"; };
+		678439C51527CDED009744CC /* CoreDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataAccess.h; sourceTree = "<group>"; };
+		678439C61527CDED009744CC /* CoreDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataAccess.m; sourceTree = "<group>"; };
+		67BBD3BB1527FA7D00F74374 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		67BBD3C11527FCA900F74374 /* startMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startMenu.h; path = ../startMenu.h; sourceTree = "<group>"; };
+		67BBD3C21527FCA900F74374 /* startMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = startMenu.m; path = ../startMenu.m; sourceTree = "<group>"; };
+		67BBD3C31527FCA900F74374 /* startMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = startMenu.xib; path = ../startMenu.xib; sourceTree = "<group>"; };
+		67BBD3DB15280B0900F74374 /* Master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Master.h; sourceTree = "<group>"; };
+		67BBD3DC15280B0900F74374 /* Master.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Master.m; sourceTree = "<group>"; };
+		67BBD3DD15280B0900F74374 /* Master.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Master.xib; sourceTree = "<group>"; };
+		67BBD3E015280B3E00F74374 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		67BBD3E115280B3E00F74374 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		67BBD3E615280FA600F74374 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
+		67BBD3E715280FA600F74374 /* RightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightView.m; sourceTree = "<group>"; };
+		67BBD3E815280FA700F74374 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
+		67BEDE901523F402000360EC /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register.h; path = ../Register.h; sourceTree = "<group>"; };
+		67BEDE911523F402000360EC /* Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register.m; path = ../Register.m; sourceTree = "<group>"; };
+		67BEDE921523F402000360EC /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = ../Register.xib; sourceTree = "<group>"; };
+		67BEDEA71523FDA2000360EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BEDEA81523FDA2000360EC /* CoreData.framework in Frameworks */,
 				670BA820152024F80063ADE0 /* UIKit.framework in Frameworks */,
 				670BA822152024F80063ADE0 /* Foundation.framework in Frameworks */,
 				670BA824152024F80063ADE0 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +87,15 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
+				67BBD3E615280FA600F74374 /* RightView.h */,
+				67BBD3E715280FA600F74374 /* RightView.m */,
+				67BBD3E815280FA700F74374 /* RightView.xib */,
+				67BBD3DB15280B0900F74374 /* Master.h */,
+				67BBD3DC15280B0900F74374 /* Master.m */,
+				67BBD3DD15280B0900F74374 /* Master.xib */,
+				67BBD3E015280B3E00F74374 /* LeftView.h */,
+				67BBD3E115280B3E00F74374 /* LeftView.m */,
+				678439C41527CD1D009744CC /* images */,
 				670BA825152024F80063ADE0 /* Instrument */,
 				670BA81E152024F80063ADE0 /* Frameworks */,
 				670BA81C152024F80063ADE0 /* Products */,
@@ -67,6 +113,7 @@
 		670BA81E152024F80063ADE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67BEDEA71523FDA2000360EC /* CoreData.framework */,
 				670BA81F152024F80063ADE0 /* UIKit.framework */,
 				670BA821152024F80063ADE0 /* Foundation.framework */,
 				670BA823152024F80063ADE0 /* CoreGraphics.framework */,
@@ -77,11 +124,20 @@
 		670BA825152024F80063ADE0 /* Instrument */ = {
 			isa = PBXGroup;
 			children = (
+				67BBD3C11527FCA900F74374 /* startMenu.h */,
+				67BBD3C21527FCA900F74374 /* startMenu.m */,
+				67BBD3C31527FCA900F74374 /* startMenu.xib */,
+				67BEDE901523F402000360EC /* Register.h */,
+				67BEDE911523F402000360EC /* Register.m */,
+				67BEDE921523F402000360EC /* Register.xib */,
+				6784379115265210009744CC /* Model.xcdatamodeld */,
+				6784379415265249009744CC /* Users.h */,
+				6784379515265249009744CC /* Users.m */,
 				670BA82E152024F80063ADE0 /* AppDelegate.h */,
 				670BA82F152024F80063ADE0 /* AppDelegate.m */,
-				670BA831152024F80063ADE0 /* ViewController.h */,
-				670BA832152024F80063ADE0 /* ViewController.m */,
-				670BA834152024F80063ADE0 /* ViewController.xib */,
+				678439C51527CDED009744CC /* CoreDataAccess.h */,
+				678439C61527CDED009744CC /* CoreDataAccess.m */,
+				67BBD3BB1527FA7D00F74374 /* ViewController.xib */,
 				670BA826152024F80063ADE0 /* Supporting Files */,
 			);
 			path = Instrument;
@@ -96,6 +152,17 @@
 				670BA82D152024F80063ADE0 /* Instrument-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		678439C41527CD1D009744CC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				678439B41526B9EE009744CC /* textfield.png */,
+				678439B21526AE95009744CC /* register_bg.png */,
+				67843835152666F2009744CC /* textfield_bg.png */,
+			);
+			name = images;
+			path = Instrument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +191,7 @@
 		670BA812152024F80063ADE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Tufts University";
 			};
 			buildConfigurationList = 670BA815152024F80063ADE0 /* Build configuration list for PBXProject "Instrument" */;
@@ -150,7 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				670BA82A152024F80063ADE0 /* InfoPlist.strings in Resources */,
-				670BA836152024F80063ADE0 /* ViewController.xib in Resources */,
+				67BEDE941523F402000360EC /* Register.xib in Resources */,
+				67843836152666F2009744CC /* textfield_bg.png in Resources */,
+				678439B31526AE95009744CC /* register_bg.png in Resources */,
+				678439B51526B9EE009744CC /* textfield.png in Resources */,
+				67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */,
+				67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */,
+				67BBD3DF15280B0900F74374 /* Master.xib in Resources */,
+				67BBD3EA15280FA700F74374 /* RightView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +237,14 @@
 			files = (
 				670BA82C152024F80063ADE0 /* main.m in Sources */,
 				670BA830152024F80063ADE0 /* AppDelegate.m in Sources */,
-				670BA833152024F80063ADE0 /* ViewController.m in Sources */,
+				67BEDE931523F402000360EC /* Register.m in Sources */,
+				6784379315265210009744CC /* Model.xcdatamodeld in Sources */,
+				6784379615265249009744CC /* Users.m in Sources */,
+				678439C71527CDED009744CC /* CoreDataAccess.m in Sources */,
+				67BBD3C41527FCA900F74374 /* startMenu.m in Sources */,
+				67BBD3DE15280B0900F74374 /* Master.m in Sources */,
+				67BBD3E215280B3E00F74374 /* LeftView.m in Sources */,
+				67BBD3E915280FA700F74374 /* RightView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,14 +257,6 @@
 				670BA829152024F80063ADE0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		670BA834152024F80063ADE0 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				670BA835152024F80063ADE0 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,8 +350,22 @@
 				670BA83B152024F80063ADE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6784379115265210009744CC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6784379215265210009744CC /* Model.xcdatamodel */,
+			);
+			currentVersion = 6784379215265210009744CC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 670BA812152024F80063ADE0 /* Project object */;
 }

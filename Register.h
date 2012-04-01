@@ -1,23 +1,24 @@
 //
-//  AppDelegate.h
+//  Register.h
 //  Instrument
 //
-//  Created by Louis Ellis on 3/26/12.
+//  Created by Louis Ellis on 3/28/12.
 //  Copyright (c) 2012 Tufts University. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface Register : UIViewController
 {
-    
-  IBOutlet UINavigationController *navigationController;
-}
-@property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+
+}
+
+-(IBAction)buttonTrigger:(id)sender;
+-(bool) save;
+@property (nonatomic, retain) IBOutlet UITextField *username_field;
+@property (nonatomic, retain) IBOutlet UITextField *name_field;
+@property (nonatomic, retain) IBOutlet UITextField *email_field;
 
 
 // Core data stuff
@@ -26,11 +27,9 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel; // Contains your schema; contains methods for deleting/adding data to data store
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator; // "Bridge" or connection between your application and physical files
-@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
-
--(BOOL) userPresent;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
 
 @end

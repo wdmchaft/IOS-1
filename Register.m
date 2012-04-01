@@ -1,119 +1,125 @@
 //
-//  AppDelegate.m
+//  Register.m
 //  Instrument
 //
-//  Created by Louis Ellis on 3/26/12.
+//  Created by Louis Ellis on 3/28/12.
 //  Copyright (c) 2012 Tufts University. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "Users.h"
 #import "Register.h"
-#import "startMenu.h"
-#import "Master.h"
+#import "Users.h"
 
-@implementation AppDelegate
+@interface Register ()
 
-@synthesize window = _window;
-@synthesize navigationController;
-@synthesize viewController = _viewController;
+@end
+
+@implementation Register
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+@synthesize username_field, name_field, email_field;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
-    
-    UIViewController * main_menu = [[startMenu alloc] init];
-    UIViewController * register_menu = [[Register alloc] init]; 
-
-   navigationController = [[UINavigationController alloc] initWithRootViewController:main_menu];
-
-       
-    if(![self userPresent])
-        [self.navigationController pushViewController:register_menu animated:YES];
-
-
-    
-    [self.window addSubview:navigationController.view];
-    [self.window makeKeyAndVisible];
-
-
-    // Add an employee to our data store
-   // Users *e = (Users *)[NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:self.managedObjectContext];
-    
-    
-       return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+    }
+    return self;
 }
 
 
--(BOOL)userPresent{
-    NSError * error;
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *searchEntity = [NSEntityDescription entityForName:@"Users" inManagedObjectContext:self.managedObjectContext];
-    [request setEntity:searchEntity];
+
+-(bool) save{
+    Users *e = (Users *)[NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:self.managedObjectContext];
     
-    NSMutableArray *results = [[self.managedObjectContext executeFetchRequest:request
-                                                                        error:&error]mutableCopy];
-    if ([results count] == 0) {
-        return false ;   
+    NSString *userName, *email, *name;
+  
+    userName = username_field.text;
+    email = email_field.text;
+    name = name_field.text;
+    
+    //Check if user enters characters for all textfields
+    if([userName isEqualToString:@""] || [email isEqualToString:@""] || [name isEqualToString:@""] )
+        return false;
+    //Check if user enter valid email 
+    if([email rangeOfString:@"@"].location == NSNotFound) { 
+        return false;
+    }
+    
+    [e setName:name ];
+    [e setUser_id:userName];
+    [e setEmail:email];
+    [e setLevel:[[NSNumber alloc]initWithInt:0]];
+    
+    NSError *error;
+    (void) error;
+    
+        
+        
+    if (![self.managedObjectContext save:&error]) {
+        return false;
     }
     else {
-        NSLog(@"%@", results);
-        return true;  
+        return true;
     }
 
+}
+
+-(IBAction)buttonTrigger:(id)sender{
     
-    
+    UIButton *theButton = (UIButton *)sender;
+    NSString * buttonTitle = theButton.currentTitle;
+  
+    if([buttonTitle isEqualToString:@"Create"]){
+        NSString * msg = @"Profile Created";
+        if(![self save])
+            msg = @"Profile Not Created";
+        
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Registration"
+                                                          message:msg
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+        
+        [message show];
+        
+        
+        [self.navigationController popViewControllerAnimated:YES];//not to see pop
+    }
+    if([buttonTitle isEqualToString:@"Cancel"]){
+        [self.navigationController popViewControllerAnimated:YES];//not to see pop
+    }
+        
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (void)viewDidLoad
 {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-     */
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    [self.navigationItem setHidesBackButton:YES];
+    [self.navigationController setNavigationBarHidden:YES];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"register_bg.png"]];
+  
+
+    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void)viewDidUnload
 {
-    /*
-     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-     */
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+	return YES;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
-}
-- (void)saveContext
-{
-}
+#pragma mark - Core Data stack
 
-
+// Returns the managed object context for the application.
+// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
 - (NSManagedObjectContext *)managedObjectContext
 {
     if (__managedObjectContext != nil) {
@@ -140,12 +146,6 @@
     return __managedObjectModel;
 }
 
-
-
-
-
-
-
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
@@ -158,12 +158,6 @@
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    
- //   [__persistentStoreCoordinator removePersistentStore:store error:&error];
-    
-   // [[NSFileManager defaultManager] removeItemAtPath:storeURL.path error:&error];
-
-    
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
@@ -190,17 +184,32 @@
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
-    
     }    
     
     return __persistentStoreCoordinator;
 }
 
+#pragma mark - Application's Documents directory
 
-
+// Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+- (void)saveContext
+{
+    NSError *error = nil;
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        } 
+    }
+}
+
 
 @end
