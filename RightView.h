@@ -7,13 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface RightView : UIViewController
+
+@interface RightView : UIViewController <UISplitViewControllerDelegate>
 {
     IBOutlet UILabel *lbltitle;
     NSDictionary *newsdetail;
-}
+    id detailItem;
+    UINavigationBar *navigationBar;    
 
-@property (retain, nonatomic) NSNumber *detailItem;
+
+}
+-(IBAction)buttonTrigger:(id)sender;
+@property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar; 
 @property (nonatomic,retain)NSDictionary *newsDict;
+@property (nonatomic, retain) id detailItem;
+@property (strong) AVAudioPlayer *mary_had;
+
 @end

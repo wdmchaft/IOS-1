@@ -98,7 +98,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self.navigationItem setHidesBackButton:YES];
     [self.navigationController setNavigationBarHidden:YES];
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"register_bg.png"]];
+   // self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"register_bg.png"]];
   
 
     // Do any additional setup after loading the view from its nib.

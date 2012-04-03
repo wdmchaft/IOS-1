@@ -7,6 +7,7 @@
 //
 
 #import "LeftView.h"
+#import "RightView.h"
 
 @interface LeftView ()
 
@@ -15,7 +16,9 @@
 @implementation LeftView
 
 @synthesize right;
-@synthesize newsArray;
+@synthesize songs;
+@synthesize songContent;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -28,7 +31,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.clearsSelectionOnViewWillAppear = NO;
+    self.contentSizeForViewInPopover = 
+    CGSizeMake(320.0, 600.0);
 
+    self.songs = [[NSMutableArray alloc]
+                 initWithObjects:@"Mary Had A little Lamb", @"Google",
+                 @"Apple", @"eBookFrenzy", nil];
+    
+    self.songContent = [[NSMutableArray alloc]
+                     initWithObjects:@"http://www.yahoo.com",
+                     @"http:/www.google.com",
+                     @"http://www.apple.com",
+                     @"http://www.ebookfrenzy.com",
+                     nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -52,24 +68,30 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.songs count];    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
+{  NSString *CellIdentifier = @"CountryCell";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     // Configure the cell...
+   
+    
+    cell.textLabel.text =[self.songs objectAtIndex:indexPath.row];
+    
     
     return cell;
 }
@@ -117,6 +139,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    right.detailItem = [self.songs objectAtIndex:indexPath.row];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

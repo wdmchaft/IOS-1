@@ -10,11 +10,14 @@
 #import "RightView.h"
 
 @interface LeftView : UITableViewController{
-    	    NSMutableArray *newsArray;
+    	    NSMutableArray *songs;
+            NSMutableArray *songContent;
+
     	    IBOutlet RightView *right;
     	 
     	}
 @property(nonatomic, retain) IBOutlet RightView *right;
-@property(nonatomic, retain) NSMutableArray *newsArray;
+@property(nonatomic, retain) NSMutableArray *songs;
+@property(nonatomic, retain) NSMutableArray *songContent;
 
 @end

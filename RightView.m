@@ -7,7 +7,7 @@
 //
 
 #import "RightView.h"
-
+#import "LeftView.h"
 @interface RightView ()
 
 @end
@@ -15,6 +15,36 @@
 @implementation RightView
 @synthesize newsDict;
 @synthesize detailItem;
+@synthesize navigationBar;
+@synthesize mary_had;
+- (void)setDetailItem:(id)newDetailItem {
+    
+    //Set the title   
+    detailItem = newDetailItem;
+    self.navigationItem.title = detailItem;
+    
+    
+    
+}
+
+- (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
+    
+  	barButtonItem.title = @"Phone List";
+    [navigationBar.topItem setLeftBarButtonItem:barButtonItem animated:YES];
+ //   self.popoverController = pc;
+	
+	
+}
+
+
+
+// Called when the view is shown again in the split view, invalidating the button and popover controller.
+- (void)splitViewController: (UISplitViewController*)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+    
+  	
+   // self.popoverController = nil;
+    
+}
 
 
 
@@ -26,11 +56,36 @@
     }
     return self;
 }
+-(IBAction)buttonTrigger:(id)sender{
+    UIButton *theButton = (UIButton *)sender;
+    NSString * buttonTitle = theButton.currentTitle;
+    
+    if([buttonTitle isEqualToString:@"Play Song"]){
+        if (mary_had != nil) {
+            [mary_had play];
+            NSLog(@"gffg");
+        }
+    }
+    
+    
+    if([buttonTitle isEqualToString:@"Back"]){
+        [self.navigationController popViewControllerAnimated:YES];//not to see pop
+    }
+
+    
+}
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  //  NSURL *urlPathOfAudio;
+    NSError *audioError;
+
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/mary.mid", [[NSBundle mainBundle] resourcePath]]];        
+    mary_had= [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&audioError];
+    
 }
 
 - (void)viewDidUnload
