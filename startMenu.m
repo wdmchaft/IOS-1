@@ -39,7 +39,7 @@
     // Do any additional setup after loading the view from its nib.
     CoreDataAccess * table_contents = [[CoreDataAccess alloc]init];
     NSMutableArray *contents = [table_contents core_data_Content];
-    self.title= @"Instrument Apprentice";
+    self.title= @"Instrument Apprentice: Piano";
     users = [[NSMutableArray alloc]init];
    
     contents = [contents valueForKey:@"user_id"];
@@ -62,6 +62,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
+	self.navigationController.navigationBar.barStyle = UIBarStyleBlack; // the part that doesn't work
+	self.navigationController.navigationBar.tintColor = [UIColor yellowColor];
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -74,30 +80,20 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     // Required for UITableViewDataSource protocol: Responsible for returning instances of the UITableViewCell class
     static NSString *CellIdentifier = @"Cell";
     
-    
-    
+
     //---try to get a reusable cell---
     
-    UITableViewCell *cell = [tableView
-                             
-                             dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     
     //---create new cell if no reusable cell is available---
     
     if (cell == nil) {
         
-        cell = [[UITableViewCell alloc]
-                 
-                 initWithStyle:UITableViewStyleGrouped
-                 
-                 reuseIdentifier:CellIdentifier] ;
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewStyleGrouped reuseIdentifier:CellIdentifier] ;
         
     }
-    
-    
-    
+
     //---set the text to display for the cell---
   //  [contents valueForKey:@"user_id"];
     NSString *cellValue = [users objectAtIndex:indexPath.row] ;
@@ -110,7 +106,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    if(section == 0)
         return @"Profiles";
    
 }

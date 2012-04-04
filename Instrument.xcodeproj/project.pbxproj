@@ -18,7 +18,6 @@
 		677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FE1529FF2700631745 /* CoreAudio.framework */; };
 		677C27011529FF2C00631745 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C27001529FF2C00631745 /* CoreMIDI.framework */; };
 		677C27031529FFEE00631745 /* mary.mid in Resources */ = {isa = PBXBuildFile; fileRef = 677C27021529FFEE00631745 /* mary.mid */; };
-		677C2709152A213C00631745 /* Hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 677C2708152A213C00631745 /* Hello.mp3 */; };
 		6784379315265210009744CC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6784379115265210009744CC /* Model.xcdatamodeld */; };
 		6784379615265249009744CC /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784379515265249009744CC /* Users.m */; };
 		67843836152666F2009744CC /* textfield_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 67843835152666F2009744CC /* textfield_bg.png */; };
@@ -53,7 +52,6 @@
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		677C27001529FF2C00631745 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		677C27021529FFEE00631745 /* mary.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = mary.mid; path = ../../Downloads/mary.mid; sourceTree = "<group>"; };
-		677C2708152A213C00631745 /* Hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hello.mp3; sourceTree = "<group>"; };
 		6784379215265210009744CC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6784379415265249009744CC /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
 		6784379515265249009744CC /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
-				677C2708152A213C00631745 /* Hello.mp3 */,
 				677C27021529FFEE00631745 /* mary.mid */,
 				677C26F21528E75900631745 /* RightView.xib */,
 				67BBD3E615280FA600F74374 /* RightView.h */,
@@ -244,7 +241,6 @@
 				67BBD3DF15280B0900F74374 /* Master.xib in Resources */,
 				677C26F31528E75900631745 /* RightView.xib in Resources */,
 				677C27031529FFEE00631745 /* mary.mid in Resources */,
-				677C2709152A213C00631745 /* Hello.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
