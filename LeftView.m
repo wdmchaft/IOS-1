@@ -89,9 +89,9 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     // Configure the cell...
-    
-    cell.textLabel.text =[self.songs objectAtIndex:indexPath.row];
-    
+    NSString  * the_title =  [self.songs objectAtIndex:indexPath.row];
+    cell.textLabel.text =the_title;
+    [right setTitle:the_title];
     
     return cell;
 }

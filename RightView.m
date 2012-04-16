@@ -27,6 +27,7 @@
     //Set the title   
     detailItem = newDetailItem;
     self.navigationItem.title = detailItem;
+    [self setTitle:(NSString *)detailItem];
     
     
     
@@ -71,8 +72,40 @@
     // Get a string to the path of the MIDI file which
     // should be located in the Resources folder
     // I'm using a simple test midi file which is included in the download bundle at the end of this document
+    
+    
+    
+    
+    NSString * filename;
+    
+    //Get the title
+    
+    /*
+     self.songs = [[NSMutableArray alloc]
+     initWithObjects:@"Mary Had A little Lamb", @"As Time Goes By",
+     @"Flight Of The Bumble Bee", @"Carolina In The Morning",@"Alley Cat", nil];     
+     */
+    NSString * current_title;
+    current_title = [self title];
+    
+    if([current_title isEqualToString:@"Mary Had A little Lamb"] )
+            filename = @"mary";
+    
+    if([current_title isEqualToString:@"As Time Goes By"] )
+        filename = @"02astimegoesby";
+    
+    if([current_title isEqualToString:@"Flight Of The Bumble Bee"] )
+        filename = @"03bumbee";
+    
+    if([current_title isEqualToString:@"Carolina In The Morning"] )
+        filename = @"05carolina";
+    
+    if([current_title isEqualToString:@"Alley Cat"] )
+        filename = @"09alleycat";
+    
+    
     NSString *midiFilePath = [[NSBundle mainBundle]
-                              pathForResource:@"mary"
+                              pathForResource:filename
                               ofType:@"mid"];
     
     // Create a new URL which points to the MIDI file
@@ -92,6 +125,12 @@
     // reduces latency when MusicPlayerStart is called
     MusicPlayerPreroll(midi_player);
     // Starts the music playing
+    //[self performSelectorOnMainThread:@selector(stopSongInBackground) withObject:nil waitUntilDone:TRUE];
+
+    
+    
+    
+    
     MusicPlayerStart(midi_player);
     
     MusicTrack t;
@@ -129,14 +168,29 @@
     
     if([buttonTitle isEqualToString:@"Play Song"]){
         
-        //[self performSelectorInBackground:@selector(playMidiInBackground) withObject:nil];
-        NSLog((NSString *)[self.navigationController title]);
+        Boolean * isPlaying;
+        
+        MusicPlayerIsPlaying(midi_player, isPlaying);
+        
+        if(((long int)isPlaying)>0){
+            
+            [self performSelectorInBackground:@selector(stopSongInBackground) withObject:nil];
+            [self performSelectorInBackground:@selector(playMidiInBackground) withObject:nil];
+        }
+        else {
+            [self performSelectorInBackground:@selector(playMidiInBackground) withObject:nil];
+        }
+        NSLog(@"%ld", (long int)isPlaying);
+        
+
+        
+        
+        
     }
     
     if([buttonTitle isEqualToString:@"Stop Song"]){
         
         [self performSelectorInBackground:@selector(stopSongInBackground) withObject:nil];
-        
     }
     
     
@@ -153,8 +207,7 @@
 {
     [super viewDidLoad];
   //  NSURL *urlPathOfAudio;
-    NSError *audioError;
-
+    [self setTitle:@"Home"];
        
 }
 
