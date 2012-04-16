@@ -8,6 +8,8 @@
 
 #import "RightView.h"
 #import "LeftView.h"
+#import "AudioToolbox/MusicPlayer.h"
+
 @interface RightView ()
 
 @end
@@ -16,7 +18,10 @@
 @synthesize newsDict;
 @synthesize detailItem;
 @synthesize navigationBar;
-@synthesize mary_had;
+
+@synthesize midi_Loader;
+@synthesize midi_player;
+
 - (void)setDetailItem:(id)newDetailItem {
     
     //Set the title   
@@ -56,15 +61,82 @@
     }
     return self;
 }
+
+-(void) playMidiInBackground {
+    
+    // Create a new music sequence
+    // Initialise the music sequence
+    NewMusicSequence(&midi_Loader);
+    
+    // Get a string to the path of the MIDI file which
+    // should be located in the Resources folder
+    // I'm using a simple test midi file which is included in the download bundle at the end of this document
+    NSString *midiFilePath = [[NSBundle mainBundle]
+                              pathForResource:@"mary"
+                              ofType:@"mid"];
+    
+    // Create a new URL which points to the MIDI file
+    // NSURL * midiFileURL = [NSURL fileURLWithPath:midiFilePath];
+    CFURLRef pdfURL = (__bridge CFURLRef)[NSURL fileURLWithPath:midiFilePath];
+    //  CFURLRef sdfjsf = [
+    //CFURLRef sdfsdf= [
+    MusicSequenceFileLoad(midi_Loader, pdfURL, 0, 0);
+    
+    // Create a new music player
+    // Initialise the music player
+    NewMusicPlayer(&midi_player);
+    
+    // Load the sequence into the music player
+    MusicPlayerSetSequence(midi_player, midi_Loader);
+    // Called to do some MusicPlayer setup. This just
+    // reduces latency when MusicPlayerStart is called
+    MusicPlayerPreroll(midi_player);
+    // Starts the music playing
+    MusicPlayerStart(midi_player);
+    
+    MusicTrack t;
+    MusicTimeStamp len;
+    UInt32 sz = sizeof(MusicTimeStamp);
+    MusicSequenceGetIndTrack(midi_Loader, 1, &t);
+    MusicTrackGetProperty(t, kSequenceTrackProperty_TrackLength, &len, &sz);
+    
+    
+    while (1) { // kill time until the music is over
+        usleep (3 * 1000 * 1000);
+        MusicTimeStamp now = 0;
+        MusicPlayerGetTime (midi_player, &now);
+        if (now >= len)
+            break;
+    }
+    
+    // Stop the player and dispose of the objects
+    
+    
+
+}
+- (void) stopSongInBackground {
+    MusicPlayerStop(midi_player);
+    DisposeMusicSequence(midi_Loader);
+    DisposeMusicPlayer(midi_player);
+    
+}
+
+
+
 -(IBAction)buttonTrigger:(id)sender{
     UIButton *theButton = (UIButton *)sender;
     NSString * buttonTitle = theButton.currentTitle;
     
     if([buttonTitle isEqualToString:@"Play Song"]){
-        if (mary_had != nil) {
-            [mary_had play];
-            NSLog(@"gffg");
-        }
+        
+        //[self performSelectorInBackground:@selector(playMidiInBackground) withObject:nil];
+        NSLog((NSString *)[self.navigationController title]);
+    }
+    
+    if([buttonTitle isEqualToString:@"Stop Song"]){
+        
+        [self performSelectorInBackground:@selector(stopSongInBackground) withObject:nil];
+        
     }
     
     
@@ -83,9 +155,7 @@
   //  NSURL *urlPathOfAudio;
     NSError *audioError;
 
-    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/mary.mid", [[NSBundle mainBundle] resourcePath]]];        
-    mary_had= [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&audioError];
-    
+       
 }
 
 - (void)viewDidUnload

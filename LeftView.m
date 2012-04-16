@@ -36,8 +36,8 @@
     CGSizeMake(320.0, 600.0);
 
     self.songs = [[NSMutableArray alloc]
-                 initWithObjects:@"Mary Had A little Lamb", @"Google",
-                 @"Apple", @"eBookFrenzy", nil];
+                 initWithObjects:@"Mary Had A little Lamb", @"As Time Goes By",
+                 @"Flight Of The Bumble Bee", @"Carolina In The Morning",@"Alley Cat", nil];
     
     self.songContent = [[NSMutableArray alloc]
                      initWithObjects:@"http://www.yahoo.com",
@@ -50,6 +50,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 - (void)viewDidUnload
@@ -88,7 +89,6 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     // Configure the cell...
-   
     
     cell.textLabel.text =[self.songs objectAtIndex:indexPath.row];
     

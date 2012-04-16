@@ -13,6 +13,11 @@
 		670BA82A152024F80063ADE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 670BA828152024F80063ADE0 /* InfoPlist.strings */; };
 		670BA82C152024F80063ADE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670BA82B152024F80063ADE0 /* main.m */; };
 		670BA830152024F80063ADE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670BA82F152024F80063ADE0 /* AppDelegate.m */; };
+		67135279153BD71D0098E83A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67135278153BD71D0098E83A /* AudioToolbox.framework */; };
+		67135287153C8C3E0098E83A /* 09alleycat.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135283153C8C3E0098E83A /* 09alleycat.mid */; };
+		67135288153C8C3E0098E83A /* 05carolina.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135284153C8C3E0098E83A /* 05carolina.mid */; };
+		67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135285153C8C3E0098E83A /* 03bumbee.mid */; };
+		6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135286153C8C3E0098E83A /* 02astimegoesby.mid */; };
 		677C26F31528E75900631745 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677C26F21528E75900631745 /* RightView.xib */; };
 		677C26FC1529FF2100631745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FB1529FF2100631745 /* AVFoundation.framework */; };
 		677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FE1529FF2700631745 /* CoreAudio.framework */; };
@@ -47,6 +52,11 @@
 		670BA82D152024F80063ADE0 /* Instrument-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instrument-Prefix.pch"; sourceTree = "<group>"; };
 		670BA82E152024F80063ADE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		670BA82F152024F80063ADE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67135278153BD71D0098E83A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		67135283153C8C3E0098E83A /* 09alleycat.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 09alleycat.mid; sourceTree = "<group>"; };
+		67135284153C8C3E0098E83A /* 05carolina.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 05carolina.mid; sourceTree = "<group>"; };
+		67135285153C8C3E0098E83A /* 03bumbee.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 03bumbee.mid; sourceTree = "<group>"; };
+		67135286153C8C3E0098E83A /* 02astimegoesby.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 02astimegoesby.mid; sourceTree = "<group>"; };
 		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		677C26FB1529FF2100631745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -82,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67135279153BD71D0098E83A /* AudioToolbox.framework in Frameworks */,
 				677C27011529FF2C00631745 /* CoreMIDI.framework in Frameworks */,
 				677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */,
 				677C26FC1529FF2100631745 /* AVFoundation.framework in Frameworks */,
@@ -98,7 +109,8 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
-				677C27021529FFEE00631745 /* mary.mid */,
+				6713528C153C8C480098E83A /* Music */,
+				67135278153BD71D0098E83A /* AudioToolbox.framework */,
 				677C26F21528E75900631745 /* RightView.xib */,
 				67BBD3E615280FA600F74374 /* RightView.h */,
 				67BBD3E715280FA600F74374 /* RightView.m */,
@@ -167,6 +179,18 @@
 				670BA82D152024F80063ADE0 /* Instrument-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6713528C153C8C480098E83A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				677C27021529FFEE00631745 /* mary.mid */,
+				67135283153C8C3E0098E83A /* 09alleycat.mid */,
+				67135284153C8C3E0098E83A /* 05carolina.mid */,
+				67135285153C8C3E0098E83A /* 03bumbee.mid */,
+				67135286153C8C3E0098E83A /* 02astimegoesby.mid */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 		678439C41527CD1D009744CC /* images */ = {
@@ -241,6 +265,10 @@
 				67BBD3DF15280B0900F74374 /* Master.xib in Resources */,
 				677C26F31528E75900631745 /* RightView.xib in Resources */,
 				677C27031529FFEE00631745 /* mary.mid in Resources */,
+				67135287153C8C3E0098E83A /* 09alleycat.mid in Resources */,
+				67135288153C8C3E0098E83A /* 05carolina.mid in Resources */,
+				67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */,
+				6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

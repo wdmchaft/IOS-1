@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AudioToolbox/MusicPlayer.h"
 
 
 @interface RightView : UIViewController <UISplitViewControllerDelegate>
@@ -23,6 +24,6 @@
 @property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar; 
 @property (nonatomic,retain)NSDictionary *newsDict;
 @property (nonatomic, retain) id detailItem;
-@property (strong) AVAudioPlayer *mary_had;
-
+@property (nonatomic) MusicSequence midi_Loader;
+@property (nonatomic) MusicPlayer midi_player;
 @end
