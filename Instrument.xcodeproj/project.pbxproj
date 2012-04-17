@@ -22,6 +22,7 @@
 		67135297153CB10E0098E83A /* LearnSong.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67135295153CB10E0098E83A /* LearnSong.xib */; };
 		67135299153CD8D30098E83A /* start_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67135298153CD8D30098E83A /* start_bg.jpg */; };
 		6713529B153CDD530098E83A /* start_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6713529A153CDD530098E83A /* start_bg.png */; };
+		671352A2153D0D880098E83A /* white_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 671352A1153D0D880098E83A /* white_key.png */; };
 		677C26F31528E75900631745 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677C26F21528E75900631745 /* RightView.xib */; };
 		677C26FC1529FF2100631745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FB1529FF2100631745 /* AVFoundation.framework */; };
 		677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FE1529FF2700631745 /* CoreAudio.framework */; };
@@ -66,6 +67,7 @@
 		67135295153CB10E0098E83A /* LearnSong.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnSong.xib; path = ../LearnSong.xib; sourceTree = "<group>"; };
 		67135298153CD8D30098E83A /* start_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start_bg.jpg; path = ../start_bg.jpg; sourceTree = "<group>"; };
 		6713529A153CDD530098E83A /* start_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_bg.png; sourceTree = "<group>"; };
+		671352A1153D0D880098E83A /* white_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_key.png; sourceTree = "<group>"; };
 		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		677C26FB1529FF2100631745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -118,8 +120,8 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
+				671352A1153D0D880098E83A /* white_key.png */,
 				6713528C153C8C480098E83A /* Music */,
-				67135278153BD71D0098E83A /* AudioToolbox.framework */,
 				677C26F21528E75900631745 /* RightView.xib */,
 				67BBD3E615280FA600F74374 /* RightView.h */,
 				67BBD3E715280FA600F74374 /* RightView.m */,
@@ -146,6 +148,7 @@
 		670BA81E152024F80063ADE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67135278153BD71D0098E83A /* AudioToolbox.framework */,
 				677C27001529FF2C00631745 /* CoreMIDI.framework */,
 				677C26FE1529FF2700631745 /* CoreAudio.framework */,
 				677C26FB1529FF2100631745 /* AVFoundation.framework */,
@@ -286,6 +289,7 @@
 				67135297153CB10E0098E83A /* LearnSong.xib in Resources */,
 				67135299153CD8D30098E83A /* start_bg.jpg in Resources */,
 				6713529B153CDD530098E83A /* start_bg.png in Resources */,
+				671352A2153D0D880098E83A /* white_key.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
