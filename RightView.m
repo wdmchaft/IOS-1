@@ -18,19 +18,47 @@
 @synthesize newsDict;
 @synthesize detailItem;
 @synthesize navigationBar;
-
+@synthesize loadSong;
 @synthesize midi_Loader;
 @synthesize midi_player;
+@synthesize webView;
 
 - (void)setDetailItem:(id)newDetailItem {
     
     //Set the title   
     detailItem = newDetailItem;
     self.navigationItem.title = detailItem;
+    
     [self setTitle:(NSString *)detailItem];
+    NSString * title;
+    title = [self title];
+    
+    NSString *fullURL;
+    
+
+    
+    if([title isEqualToString:@"Mary Had A little Lamb"] )
+        fullURL =@"http://en.wikipedia.org/wiki/Mary_Had_a_Little_Lamb";
+        
+    if([title isEqualToString:@"As Time Goes By"] )
+        fullURL =@"http://en.wikipedia.org/wiki/As_Time_Goes_By_%28song%29";
+    
+    if([title isEqualToString:@"Flight Of The Bumble Bee"] )
+        fullURL =@"http://en.wikipedia.org/wiki/Flight_of_the_bumble_bee";
+    
+    if([title isEqualToString:@"Carolina In The Morning"] )
+        fullURL =@"http://en.wikipedia.org/wiki/Carolina_In_The_Morning";
+    
+    if([title isEqualToString:@"Alley Cat"] )
+        fullURL =@"http://en.wikipedia.org/wiki/Alley_Cat_%28song%29";
     
     
-    
+     
+     NSURL *url = [NSURL URLWithString:fullURL];
+     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+     [webView loadRequest:requestObj];
+     
+     
 }
 
 - (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
@@ -73,9 +101,7 @@
     // should be located in the Resources folder
     // I'm using a simple test midi file which is included in the download bundle at the end of this document
     
-    
-    
-    
+
     NSString * filename;
     
     //Get the title
@@ -197,6 +223,17 @@
     if([buttonTitle isEqualToString:@"Back"]){
         [self.navigationController popViewControllerAnimated:YES];//not to see pop
     }
+    
+    if([buttonTitle isEqualToString:@"Learn Song"]){
+        if(self.loadSong == nil)
+        {
+            LearnSong *start_app = [[LearnSong alloc]
+                                 initWithNibName:@"LearnSong" bundle:[NSBundle mainBundle]];
+            self.loadSong = start_app;
+        }
+        
+        [self.navigationController pushViewController:self.loadSong animated:YES];
+    }
 
     
 }
@@ -208,6 +245,11 @@
     [super viewDidLoad];
   //  NSURL *urlPathOfAudio;
     [self setTitle:@"Home"];
+    NSString *fullURL = @"http://en.wikipedia.org/wiki/Mary_Had_a_Little_Lamb";
+    
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:requestObj];
        
 }
 

@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AudioToolbox/MusicPlayer.h"
+#import "LearnSong.h"
 
 
-@interface RightView : UIViewController <UISplitViewControllerDelegate>
+@interface RightView : UIViewController <UISplitViewControllerDelegate, UIWebViewDelegate>
 {
     IBOutlet UILabel *lbltitle;
     NSDictionary *newsdetail;
     id detailItem;
     UINavigationBar *navigationBar;    
+    LearnSong * loadSong;
+    IBOutlet UIWebView *webView;
 
 
 }
@@ -26,4 +29,6 @@
 @property (nonatomic, retain) id detailItem;
 @property (nonatomic) MusicSequence midi_Loader;
 @property (nonatomic) MusicPlayer midi_player;
+@property (nonatomic, retain) LearnSong *loadSong;
+@property (nonatomic, retain) UIWebView *webView;
 @end

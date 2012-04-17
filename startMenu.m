@@ -19,11 +19,12 @@
 @synthesize start_app;
 @synthesize user_table;
 @synthesize users;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        user_table.backgroundColor = [UIColor colorWithRed:0. green:0.39 blue:0.106 alpha:.2];
     }
     return self;
 }
@@ -41,9 +42,13 @@
     NSMutableArray *contents = [table_contents core_data_Content];
     self.title= @"Instrument Apprentice: Piano";
     users = [[NSMutableArray alloc]init];
+
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"start_bg.png"]];
    
     contents = [contents valueForKey:@"user_id"];
     self.users= contents;
+
+    user_table.backgroundColor = [UIColor clearColor];
     
 }
 
@@ -87,7 +92,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     
     //---create new cell if no reusable cell is available---
-    
     if (cell == nil) {
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewStyleGrouped reuseIdentifier:CellIdentifier] ;
@@ -99,7 +103,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     NSString *cellValue = [users objectAtIndex:indexPath.row] ;
     
     cell.textLabel.text = cellValue;
-    
+    cell.backgroundColor = [UIColor colorWithRed:0. green:0.39 blue:0.106 alpha:0.];
+
     
     return cell;
 }

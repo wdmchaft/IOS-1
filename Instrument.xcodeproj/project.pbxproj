@@ -18,6 +18,10 @@
 		67135288153C8C3E0098E83A /* 05carolina.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135284153C8C3E0098E83A /* 05carolina.mid */; };
 		67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135285153C8C3E0098E83A /* 03bumbee.mid */; };
 		6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135286153C8C3E0098E83A /* 02astimegoesby.mid */; };
+		67135296153CB10E0098E83A /* LearnSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 67135294153CB10E0098E83A /* LearnSong.m */; };
+		67135297153CB10E0098E83A /* LearnSong.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67135295153CB10E0098E83A /* LearnSong.xib */; };
+		67135299153CD8D30098E83A /* start_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67135298153CD8D30098E83A /* start_bg.jpg */; };
+		6713529B153CDD530098E83A /* start_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6713529A153CDD530098E83A /* start_bg.png */; };
 		677C26F31528E75900631745 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677C26F21528E75900631745 /* RightView.xib */; };
 		677C26FC1529FF2100631745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FB1529FF2100631745 /* AVFoundation.framework */; };
 		677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FE1529FF2700631745 /* CoreAudio.framework */; };
@@ -57,6 +61,11 @@
 		67135284153C8C3E0098E83A /* 05carolina.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 05carolina.mid; sourceTree = "<group>"; };
 		67135285153C8C3E0098E83A /* 03bumbee.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 03bumbee.mid; sourceTree = "<group>"; };
 		67135286153C8C3E0098E83A /* 02astimegoesby.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 02astimegoesby.mid; sourceTree = "<group>"; };
+		67135293153CB10E0098E83A /* LearnSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnSong.h; path = ../LearnSong.h; sourceTree = "<group>"; };
+		67135294153CB10E0098E83A /* LearnSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnSong.m; path = ../LearnSong.m; sourceTree = "<group>"; };
+		67135295153CB10E0098E83A /* LearnSong.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnSong.xib; path = ../LearnSong.xib; sourceTree = "<group>"; };
+		67135298153CD8D30098E83A /* start_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start_bg.jpg; path = ../start_bg.jpg; sourceTree = "<group>"; };
+		6713529A153CDD530098E83A /* start_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_bg.png; sourceTree = "<group>"; };
 		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		677C26FB1529FF2100631745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -151,6 +160,9 @@
 		670BA825152024F80063ADE0 /* Instrument */ = {
 			isa = PBXGroup;
 			children = (
+				67135293153CB10E0098E83A /* LearnSong.h */,
+				67135294153CB10E0098E83A /* LearnSong.m */,
+				67135295153CB10E0098E83A /* LearnSong.xib */,
 				67BBD3C11527FCA900F74374 /* startMenu.h */,
 				67BBD3C21527FCA900F74374 /* startMenu.m */,
 				67BBD3C31527FCA900F74374 /* startMenu.xib */,
@@ -196,6 +208,8 @@
 		678439C41527CD1D009744CC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6713529A153CDD530098E83A /* start_bg.png */,
+				67135298153CD8D30098E83A /* start_bg.jpg */,
 				678439B41526B9EE009744CC /* textfield.png */,
 				678439B21526AE95009744CC /* register_bg.png */,
 				67843835152666F2009744CC /* textfield_bg.png */,
@@ -269,6 +283,9 @@
 				67135288153C8C3E0098E83A /* 05carolina.mid in Resources */,
 				67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */,
 				6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */,
+				67135297153CB10E0098E83A /* LearnSong.xib in Resources */,
+				67135299153CD8D30098E83A /* start_bg.jpg in Resources */,
+				6713529B153CDD530098E83A /* start_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +306,7 @@
 				67BBD3DE15280B0900F74374 /* Master.m in Sources */,
 				67BBD3E215280B3E00F74374 /* LeftView.m in Sources */,
 				67BBD3E915280FA700F74374 /* RightView.m in Sources */,
+				67135296153CB10E0098E83A /* LearnSong.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
