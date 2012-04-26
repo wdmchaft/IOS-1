@@ -120,7 +120,7 @@
 					<object class="IBUIWebView" id="276300458">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">258</int>
-						<string key="NSFrame">{{34, 20}, {970, 460}}</string>
+						<string key="NSFrame">{{9, 30}, {367, 300}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -137,7 +137,6 @@
 				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -145,7 +144,6 @@
 						<int key="NSID">2</int>
 					</object>
 				</object>
-				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
 					<int key="IBUIStatusBarStyle">2</int>
 				</object>

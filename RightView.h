@@ -11,7 +11,10 @@
 #import "AudioToolbox/MusicPlayer.h"
 #import "LearnSong.h"
 
+//#import "mobilesynthViewController.h"
 
+@class mobilesynthViewController;
+ 
 @interface RightView : UIViewController <UISplitViewControllerDelegate, UIWebViewDelegate>
 {
     IBOutlet UILabel *lbltitle;
@@ -20,6 +23,7 @@
     UINavigationBar *navigationBar;    
     LearnSong * loadSong;
     IBOutlet UIWebView *webView;
+    mobilesynthViewController * learn;
 
 
 }
@@ -30,5 +34,7 @@
 @property (nonatomic) MusicSequence midi_Loader;
 @property (nonatomic) MusicPlayer midi_player;
 @property (nonatomic, retain) LearnSong *loadSong;
+@property (nonatomic, retain)  mobilesynthViewController *learn;
+
 @property (nonatomic, retain) UIWebView *webView;
 @end

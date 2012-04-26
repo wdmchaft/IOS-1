@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6707516F153E14E8004DEB64 /* selection_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6707516E153E14E8004DEB64 /* selection_bg.png */; };
+		67075172153E165A004DEB64 /* newBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 67075171153E165A004DEB64 /* newBG.png */; };
 		670BA820152024F80063ADE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670BA81F152024F80063ADE0 /* UIKit.framework */; };
 		670BA822152024F80063ADE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670BA821152024F80063ADE0 /* Foundation.framework */; };
 		670BA824152024F80063ADE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670BA823152024F80063ADE0 /* CoreGraphics.framework */; };
@@ -34,19 +36,61 @@
 		678439B31526AE95009744CC /* register_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B21526AE95009744CC /* register_bg.png */; };
 		678439B51526B9EE009744CC /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B41526B9EE009744CC /* textfield.png */; };
 		678439C71527CDED009744CC /* CoreDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 678439C61527CDED009744CC /* CoreDataAccess.m */; };
+		67BAC4221549C46E004EC7CC /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC40E1549C46E004EC7CC /* AudioOutput.m */; };
+		67BAC4231549C46E004EC7CC /* mobilesynthAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4111549C46E004EC7CC /* mobilesynthAppDelegate.mm */; };
+		67BAC4241549C46E004EC7CC /* mobilesynthViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4131549C46E004EC7CC /* mobilesynthViewController.mm */; };
+		67BAC4251549C46E004EC7CC /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4151549C46E004EC7CC /* KeyboardView.m */; };
+		67BAC4261549C46E004EC7CC /* ControlScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4171549C46E004EC7CC /* ControlScrollView.m */; };
+		67BAC4271549C46E004EC7CC /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4191549C46E004EC7CC /* OctaveView.m */; };
+		67BAC4281549C46E004EC7CC /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC41B1549C46E004EC7CC /* WhiteKeyView.m */; };
+		67BAC4291549C46E004EC7CC /* KeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC41D1549C46E004EC7CC /* KeyView.m */; };
+		67BAC42A1549C46E004EC7CC /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC41F1549C46E004EC7CC /* BlackKeyView.m */; };
+		67BAC42B1549C46E004EC7CC /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4211549C46E004EC7CC /* TouchForwardingUIScrollView.m */; };
+		67BAC4391549C49D004EC7CC /* EnvelopeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC42E1549C49D004EC7CC /* EnvelopeView.mm */; };
+		67BAC43A1549C49D004EC7CC /* ModulationView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4301549C49D004EC7CC /* ModulationView.mm */; };
+		67BAC43B1549C49D004EC7CC /* OscillatorDetailView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4321549C49D004EC7CC /* OscillatorDetailView.mm */; };
+		67BAC43C1549C49D004EC7CC /* OscillatorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4341549C49D004EC7CC /* OscillatorView.mm */; };
+		67BAC43D1549C49D004EC7CC /* FilterView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4361549C49D004EC7CC /* FilterView.mm */; };
+		67BAC43E1549C49D004EC7CC /* ArpeggioView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4381549C49D004EC7CC /* ArpeggioView.mm */; };
+		67BAC46E1549C51B004EC7CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4601549C51B004EC7CC /* Default.png */; };
+		67BAC46F1549C51B004EC7CC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4611549C51B004EC7CC /* Icon.png */; };
+		67BAC4701549C51B004EC7CC /* release.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4621549C51B004EC7CC /* release.png */; };
+		67BAC4711549C51B004EC7CC /* sustain.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4631549C51B004EC7CC /* sustain.png */; };
+		67BAC4721549C51B004EC7CC /* decay.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4641549C51B004EC7CC /* decay.png */; };
+		67BAC4731549C51B004EC7CC /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4651549C51B004EC7CC /* attack.png */; };
+		67BAC4741549C51B004EC7CC /* reverse-sawtooth-wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4661549C51B004EC7CC /* reverse-sawtooth-wave.png */; };
+		67BAC4751549C51B004EC7CC /* sawtooth-wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4671549C51B004EC7CC /* sawtooth-wave.png */; };
+		67BAC4761549C51B004EC7CC /* triangle-wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4681549C51B004EC7CC /* triangle-wave.png */; };
+		67BAC4771549C51B004EC7CC /* square-wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4691549C51B004EC7CC /* square-wave.png */; };
+		67BAC4781549C51B004EC7CC /* mobilesynth.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46A1549C51B004EC7CC /* mobilesynth.png */; };
+		67BAC4791549C51B004EC7CC /* mobilesynthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46B1549C51B004EC7CC /* mobilesynthViewController.xib */; };
+		67BAC47A1549C51B004EC7CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46C1549C51B004EC7CC /* MainWindow.xib */; };
+		67BAC47B1549C51B004EC7CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46D1549C51B004EC7CC /* Info.plist */; };
+		67BAC47E1549C553004EC7CC /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */; };
+		67BAC4821549C8DC004EC7CC /* arpeggio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4811549C8DC004EC7CC /* arpeggio.cpp */; };
+		67BAC4941549C8F0004EC7CC /* key_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4841549C8F0004EC7CC /* key_stack.cpp */; };
+		67BAC4951549C8F0004EC7CC /* lag_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4861549C8F0004EC7CC /* lag_processor.cpp */; };
+		67BAC4961549C8F0004EC7CC /* parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4881549C8F0004EC7CC /* parameter.cpp */; };
+		67BAC4971549C8F0004EC7CC /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48A1549C8F0004EC7CC /* filter.cpp */; };
+		67BAC4981549C8F0004EC7CC /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48C1549C8F0004EC7CC /* controller.cpp */; };
+		67BAC4991549C8F0004EC7CC /* envelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48E1549C8F0004EC7CC /* envelope.cpp */; };
+		67BAC49A1549C8F0004EC7CC /* modulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4901549C8F0004EC7CC /* modulation.cpp */; };
+		67BAC49B1549C8F0004EC7CC /* oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4921549C8F0004EC7CC /* oscillator.cpp */; };
 		67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3BB1527FA7D00F74374 /* ViewController.xib */; };
 		67BBD3C41527FCA900F74374 /* startMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3C21527FCA900F74374 /* startMenu.m */; };
 		67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3C31527FCA900F74374 /* startMenu.xib */; };
 		67BBD3DE15280B0900F74374 /* Master.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3DC15280B0900F74374 /* Master.m */; };
 		67BBD3DF15280B0900F74374 /* Master.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3DD15280B0900F74374 /* Master.xib */; };
 		67BBD3E215280B3E00F74374 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3E115280B3E00F74374 /* LeftView.m */; };
-		67BBD3E915280FA700F74374 /* RightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3E715280FA600F74374 /* RightView.m */; };
+		67BBD3E915280FA700F74374 /* RightView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3E715280FA600F74374 /* RightView.mm */; };
 		67BEDE931523F402000360EC /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BEDE911523F402000360EC /* Register.m */; };
 		67BEDE941523F402000360EC /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BEDE921523F402000360EC /* Register.xib */; };
 		67BEDEA81523FDA2000360EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BEDEA71523FDA2000360EC /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6707516E153E14E8004DEB64 /* selection_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selection_bg.png; path = ../selection_bg.png; sourceTree = "<group>"; };
+		67075171153E165A004DEB64 /* newBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBG.png; sourceTree = "<group>"; };
 		670BA81B152024F80063ADE0 /* Instrument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instrument.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670BA81F152024F80063ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		670BA821152024F80063ADE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +125,72 @@
 		678439B41526B9EE009744CC /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield.png; path = ../textfield.png; sourceTree = "<group>"; };
 		678439C51527CDED009744CC /* CoreDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataAccess.h; sourceTree = "<group>"; };
 		678439C61527CDED009744CC /* CoreDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataAccess.m; sourceTree = "<group>"; };
+		67BAC40E1549C46E004EC7CC /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		67BAC40F1549C46E004EC7CC /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		67BAC4101549C46E004EC7CC /* mobilesynthAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobilesynthAppDelegate.h; sourceTree = "<group>"; };
+		67BAC4111549C46E004EC7CC /* mobilesynthAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mobilesynthAppDelegate.mm; sourceTree = "<group>"; };
+		67BAC4121549C46E004EC7CC /* mobilesynthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobilesynthViewController.h; sourceTree = "<group>"; };
+		67BAC4131549C46E004EC7CC /* mobilesynthViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mobilesynthViewController.mm; sourceTree = "<group>"; };
+		67BAC4141549C46E004EC7CC /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		67BAC4151549C46E004EC7CC /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		67BAC4161549C46E004EC7CC /* ControlScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlScrollView.h; sourceTree = "<group>"; };
+		67BAC4171549C46E004EC7CC /* ControlScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlScrollView.m; sourceTree = "<group>"; };
+		67BAC4181549C46E004EC7CC /* OctaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveView.h; sourceTree = "<group>"; };
+		67BAC4191549C46E004EC7CC /* OctaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveView.m; sourceTree = "<group>"; };
+		67BAC41A1549C46E004EC7CC /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
+		67BAC41B1549C46E004EC7CC /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		67BAC41C1549C46E004EC7CC /* KeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyView.h; sourceTree = "<group>"; };
+		67BAC41D1549C46E004EC7CC /* KeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyView.m; sourceTree = "<group>"; };
+		67BAC41E1549C46E004EC7CC /* BlackKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackKeyView.h; sourceTree = "<group>"; };
+		67BAC41F1549C46E004EC7CC /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
+		67BAC4201549C46E004EC7CC /* TouchForwardingUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchForwardingUIScrollView.h; sourceTree = "<group>"; };
+		67BAC4211549C46E004EC7CC /* TouchForwardingUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingUIScrollView.m; sourceTree = "<group>"; };
+		67BAC42D1549C49D004EC7CC /* EnvelopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvelopeView.h; sourceTree = "<group>"; };
+		67BAC42E1549C49D004EC7CC /* EnvelopeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EnvelopeView.mm; sourceTree = "<group>"; };
+		67BAC42F1549C49D004EC7CC /* ModulationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulationView.h; sourceTree = "<group>"; };
+		67BAC4301549C49D004EC7CC /* ModulationView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModulationView.mm; sourceTree = "<group>"; };
+		67BAC4311549C49D004EC7CC /* OscillatorDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorDetailView.h; sourceTree = "<group>"; };
+		67BAC4321549C49D004EC7CC /* OscillatorDetailView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OscillatorDetailView.mm; sourceTree = "<group>"; };
+		67BAC4331549C49D004EC7CC /* OscillatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorView.h; sourceTree = "<group>"; };
+		67BAC4341549C49D004EC7CC /* OscillatorView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OscillatorView.mm; sourceTree = "<group>"; };
+		67BAC4351549C49D004EC7CC /* FilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterView.h; sourceTree = "<group>"; };
+		67BAC4361549C49D004EC7CC /* FilterView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FilterView.mm; sourceTree = "<group>"; };
+		67BAC4371549C49D004EC7CC /* ArpeggioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpeggioView.h; sourceTree = "<group>"; };
+		67BAC4381549C49D004EC7CC /* ArpeggioView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ArpeggioView.mm; sourceTree = "<group>"; };
+		67BAC45C1549C4DE004EC7CC /* mobilesynth_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobilesynth_Prefix.pch; sourceTree = "<group>"; };
+		67BAC4601549C51B004EC7CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		67BAC4611549C51B004EC7CC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		67BAC4621549C51B004EC7CC /* release.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = release.png; sourceTree = "<group>"; };
+		67BAC4631549C51B004EC7CC /* sustain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sustain.png; sourceTree = "<group>"; };
+		67BAC4641549C51B004EC7CC /* decay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decay.png; sourceTree = "<group>"; };
+		67BAC4651549C51B004EC7CC /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
+		67BAC4661549C51B004EC7CC /* reverse-sawtooth-wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reverse-sawtooth-wave.png"; sourceTree = "<group>"; };
+		67BAC4671549C51B004EC7CC /* sawtooth-wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sawtooth-wave.png"; sourceTree = "<group>"; };
+		67BAC4681549C51B004EC7CC /* triangle-wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangle-wave.png"; sourceTree = "<group>"; };
+		67BAC4691549C51B004EC7CC /* square-wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-wave.png"; sourceTree = "<group>"; };
+		67BAC46A1549C51B004EC7CC /* mobilesynth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobilesynth.png; sourceTree = "<group>"; };
+		67BAC46B1549C51B004EC7CC /* mobilesynthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mobilesynthViewController.xib; sourceTree = "<group>"; };
+		67BAC46C1549C51B004EC7CC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		67BAC46D1549C51B004EC7CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		67BAC4811549C8DC004EC7CC /* arpeggio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arpeggio.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/arpeggio.cpp"; sourceTree = "<group>"; };
+		67BAC4831549C8F0004EC7CC /* arpeggio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arpeggio.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/arpeggio.h"; sourceTree = "<group>"; };
+		67BAC4841549C8F0004EC7CC /* key_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = key_stack.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/key_stack.cpp"; sourceTree = "<group>"; };
+		67BAC4851549C8F0004EC7CC /* key_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = key_stack.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/key_stack.h"; sourceTree = "<group>"; };
+		67BAC4861549C8F0004EC7CC /* lag_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lag_processor.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/lag_processor.cpp"; sourceTree = "<group>"; };
+		67BAC4871549C8F0004EC7CC /* lag_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lag_processor.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/lag_processor.h"; sourceTree = "<group>"; };
+		67BAC4881549C8F0004EC7CC /* parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parameter.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/parameter.cpp"; sourceTree = "<group>"; };
+		67BAC4891549C8F0004EC7CC /* parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parameter.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/parameter.h"; sourceTree = "<group>"; };
+		67BAC48A1549C8F0004EC7CC /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filter.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/filter.cpp"; sourceTree = "<group>"; };
+		67BAC48B1549C8F0004EC7CC /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/filter.h"; sourceTree = "<group>"; };
+		67BAC48C1549C8F0004EC7CC /* controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = controller.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/controller.cpp"; sourceTree = "<group>"; };
+		67BAC48D1549C8F0004EC7CC /* controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = controller.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/controller.h"; sourceTree = "<group>"; };
+		67BAC48E1549C8F0004EC7CC /* envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = envelope.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/envelope.cpp"; sourceTree = "<group>"; };
+		67BAC48F1549C8F0004EC7CC /* envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = envelope.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/envelope.h"; sourceTree = "<group>"; };
+		67BAC4901549C8F0004EC7CC /* modulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = modulation.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/modulation.cpp"; sourceTree = "<group>"; };
+		67BAC4911549C8F0004EC7CC /* modulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modulation.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/modulation.h"; sourceTree = "<group>"; };
+		67BAC4921549C8F0004EC7CC /* oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oscillator.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/oscillator.cpp"; sourceTree = "<group>"; };
+		67BAC4931549C8F0004EC7CC /* oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oscillator.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/oscillator.h"; sourceTree = "<group>"; };
 		67BBD3BB1527FA7D00F74374 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		67BBD3C11527FCA900F74374 /* startMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startMenu.h; path = ../startMenu.h; sourceTree = "<group>"; };
 		67BBD3C21527FCA900F74374 /* startMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = startMenu.m; path = ../startMenu.m; sourceTree = "<group>"; };
@@ -91,7 +201,7 @@
 		67BBD3E015280B3E00F74374 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
 		67BBD3E115280B3E00F74374 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
 		67BBD3E615280FA600F74374 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
-		67BBD3E715280FA600F74374 /* RightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightView.m; sourceTree = "<group>"; };
+		67BBD3E715280FA600F74374 /* RightView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RightView.mm; sourceTree = "<group>"; };
 		67BEDE901523F402000360EC /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register.h; path = ../Register.h; sourceTree = "<group>"; };
 		67BEDE911523F402000360EC /* Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register.m; path = ../Register.m; sourceTree = "<group>"; };
 		67BEDE921523F402000360EC /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = ../Register.xib; sourceTree = "<group>"; };
@@ -120,11 +230,16 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
+				67BAC47C1549C544004EC7CC /* IPad */,
+				67BAC45F1549C509004EC7CC /* Resources */,
+				67BAC45B1549C4CD004EC7CC /* Other Sources */,
+				67BAC40C1549C450004EC7CC /* Classes */,
+				67075171153E165A004DEB64 /* newBG.png */,
 				671352A1153D0D880098E83A /* white_key.png */,
 				6713528C153C8C480098E83A /* Music */,
 				677C26F21528E75900631745 /* RightView.xib */,
 				67BBD3E615280FA600F74374 /* RightView.h */,
-				67BBD3E715280FA600F74374 /* RightView.m */,
+				67BBD3E715280FA600F74374 /* RightView.mm */,
 				67BBD3DB15280B0900F74374 /* Master.h */,
 				67BBD3DC15280B0900F74374 /* Master.m */,
 				67BBD3DD15280B0900F74374 /* Master.xib */,
@@ -211,6 +326,7 @@
 		678439C41527CD1D009744CC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6707516E153E14E8004DEB64 /* selection_bg.png */,
 				6713529A153CDD530098E83A /* start_bg.png */,
 				67135298153CD8D30098E83A /* start_bg.jpg */,
 				678439B41526B9EE009744CC /* textfield.png */,
@@ -219,6 +335,116 @@
 			);
 			name = images;
 			path = Instrument;
+			sourceTree = "<group>";
+		};
+		67BAC40C1549C450004EC7CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC4801549C8CD004EC7CC /* synth */,
+				67BAC42C1549C485004EC7CC /* Controls */,
+				67BAC40E1549C46E004EC7CC /* AudioOutput.m */,
+				67BAC40F1549C46E004EC7CC /* AudioOutput.h */,
+				67BAC4101549C46E004EC7CC /* mobilesynthAppDelegate.h */,
+				67BAC4111549C46E004EC7CC /* mobilesynthAppDelegate.mm */,
+				67BAC4121549C46E004EC7CC /* mobilesynthViewController.h */,
+				67BAC4131549C46E004EC7CC /* mobilesynthViewController.mm */,
+				67BAC4141549C46E004EC7CC /* KeyboardView.h */,
+				67BAC4151549C46E004EC7CC /* KeyboardView.m */,
+				67BAC4161549C46E004EC7CC /* ControlScrollView.h */,
+				67BAC4171549C46E004EC7CC /* ControlScrollView.m */,
+				67BAC4181549C46E004EC7CC /* OctaveView.h */,
+				67BAC4191549C46E004EC7CC /* OctaveView.m */,
+				67BAC41A1549C46E004EC7CC /* WhiteKeyView.h */,
+				67BAC41B1549C46E004EC7CC /* WhiteKeyView.m */,
+				67BAC41C1549C46E004EC7CC /* KeyView.h */,
+				67BAC41D1549C46E004EC7CC /* KeyView.m */,
+				67BAC41E1549C46E004EC7CC /* BlackKeyView.h */,
+				67BAC41F1549C46E004EC7CC /* BlackKeyView.m */,
+				67BAC4201549C46E004EC7CC /* TouchForwardingUIScrollView.h */,
+				67BAC4211549C46E004EC7CC /* TouchForwardingUIScrollView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		67BAC42C1549C485004EC7CC /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC42D1549C49D004EC7CC /* EnvelopeView.h */,
+				67BAC42E1549C49D004EC7CC /* EnvelopeView.mm */,
+				67BAC42F1549C49D004EC7CC /* ModulationView.h */,
+				67BAC4301549C49D004EC7CC /* ModulationView.mm */,
+				67BAC4311549C49D004EC7CC /* OscillatorDetailView.h */,
+				67BAC4321549C49D004EC7CC /* OscillatorDetailView.mm */,
+				67BAC4331549C49D004EC7CC /* OscillatorView.h */,
+				67BAC4341549C49D004EC7CC /* OscillatorView.mm */,
+				67BAC4351549C49D004EC7CC /* FilterView.h */,
+				67BAC4361549C49D004EC7CC /* FilterView.mm */,
+				67BAC4371549C49D004EC7CC /* ArpeggioView.h */,
+				67BAC4381549C49D004EC7CC /* ArpeggioView.mm */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		67BAC45B1549C4CD004EC7CC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC45C1549C4DE004EC7CC /* mobilesynth_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		67BAC45F1549C509004EC7CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC4601549C51B004EC7CC /* Default.png */,
+				67BAC4611549C51B004EC7CC /* Icon.png */,
+				67BAC4621549C51B004EC7CC /* release.png */,
+				67BAC4631549C51B004EC7CC /* sustain.png */,
+				67BAC4641549C51B004EC7CC /* decay.png */,
+				67BAC4651549C51B004EC7CC /* attack.png */,
+				67BAC4661549C51B004EC7CC /* reverse-sawtooth-wave.png */,
+				67BAC4671549C51B004EC7CC /* sawtooth-wave.png */,
+				67BAC4681549C51B004EC7CC /* triangle-wave.png */,
+				67BAC4691549C51B004EC7CC /* square-wave.png */,
+				67BAC46A1549C51B004EC7CC /* mobilesynth.png */,
+				67BAC46B1549C51B004EC7CC /* mobilesynthViewController.xib */,
+				67BAC46C1549C51B004EC7CC /* MainWindow.xib */,
+				67BAC46D1549C51B004EC7CC /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		67BAC47C1549C544004EC7CC /* IPad */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */,
+			);
+			name = IPad;
+			sourceTree = "<group>";
+		};
+		67BAC4801549C8CD004EC7CC /* synth */ = {
+			isa = PBXGroup;
+			children = (
+				67BAC4831549C8F0004EC7CC /* arpeggio.h */,
+				67BAC4841549C8F0004EC7CC /* key_stack.cpp */,
+				67BAC4851549C8F0004EC7CC /* key_stack.h */,
+				67BAC4861549C8F0004EC7CC /* lag_processor.cpp */,
+				67BAC4871549C8F0004EC7CC /* lag_processor.h */,
+				67BAC4881549C8F0004EC7CC /* parameter.cpp */,
+				67BAC4891549C8F0004EC7CC /* parameter.h */,
+				67BAC48A1549C8F0004EC7CC /* filter.cpp */,
+				67BAC48B1549C8F0004EC7CC /* filter.h */,
+				67BAC48C1549C8F0004EC7CC /* controller.cpp */,
+				67BAC48D1549C8F0004EC7CC /* controller.h */,
+				67BAC48E1549C8F0004EC7CC /* envelope.cpp */,
+				67BAC48F1549C8F0004EC7CC /* envelope.h */,
+				67BAC4901549C8F0004EC7CC /* modulation.cpp */,
+				67BAC4911549C8F0004EC7CC /* modulation.h */,
+				67BAC4921549C8F0004EC7CC /* oscillator.cpp */,
+				67BAC4931549C8F0004EC7CC /* oscillator.h */,
+				67BAC4811549C8DC004EC7CC /* arpeggio.cpp */,
+			);
+			name = synth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +516,23 @@
 				67135299153CD8D30098E83A /* start_bg.jpg in Resources */,
 				6713529B153CDD530098E83A /* start_bg.png in Resources */,
 				671352A2153D0D880098E83A /* white_key.png in Resources */,
+				6707516F153E14E8004DEB64 /* selection_bg.png in Resources */,
+				67075172153E165A004DEB64 /* newBG.png in Resources */,
+				67BAC46E1549C51B004EC7CC /* Default.png in Resources */,
+				67BAC46F1549C51B004EC7CC /* Icon.png in Resources */,
+				67BAC4701549C51B004EC7CC /* release.png in Resources */,
+				67BAC4711549C51B004EC7CC /* sustain.png in Resources */,
+				67BAC4721549C51B004EC7CC /* decay.png in Resources */,
+				67BAC4731549C51B004EC7CC /* attack.png in Resources */,
+				67BAC4741549C51B004EC7CC /* reverse-sawtooth-wave.png in Resources */,
+				67BAC4751549C51B004EC7CC /* sawtooth-wave.png in Resources */,
+				67BAC4761549C51B004EC7CC /* triangle-wave.png in Resources */,
+				67BAC4771549C51B004EC7CC /* square-wave.png in Resources */,
+				67BAC4781549C51B004EC7CC /* mobilesynth.png in Resources */,
+				67BAC4791549C51B004EC7CC /* mobilesynthViewController.xib in Resources */,
+				67BAC47A1549C51B004EC7CC /* MainWindow.xib in Resources */,
+				67BAC47B1549C51B004EC7CC /* Info.plist in Resources */,
+				67BAC47E1549C553004EC7CC /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +552,33 @@
 				67BBD3C41527FCA900F74374 /* startMenu.m in Sources */,
 				67BBD3DE15280B0900F74374 /* Master.m in Sources */,
 				67BBD3E215280B3E00F74374 /* LeftView.m in Sources */,
-				67BBD3E915280FA700F74374 /* RightView.m in Sources */,
+				67BBD3E915280FA700F74374 /* RightView.mm in Sources */,
 				67135296153CB10E0098E83A /* LearnSong.m in Sources */,
+				67BAC4221549C46E004EC7CC /* AudioOutput.m in Sources */,
+				67BAC4231549C46E004EC7CC /* mobilesynthAppDelegate.mm in Sources */,
+				67BAC4241549C46E004EC7CC /* mobilesynthViewController.mm in Sources */,
+				67BAC4251549C46E004EC7CC /* KeyboardView.m in Sources */,
+				67BAC4261549C46E004EC7CC /* ControlScrollView.m in Sources */,
+				67BAC4271549C46E004EC7CC /* OctaveView.m in Sources */,
+				67BAC4281549C46E004EC7CC /* WhiteKeyView.m in Sources */,
+				67BAC4291549C46E004EC7CC /* KeyView.m in Sources */,
+				67BAC42A1549C46E004EC7CC /* BlackKeyView.m in Sources */,
+				67BAC42B1549C46E004EC7CC /* TouchForwardingUIScrollView.m in Sources */,
+				67BAC4391549C49D004EC7CC /* EnvelopeView.mm in Sources */,
+				67BAC43A1549C49D004EC7CC /* ModulationView.mm in Sources */,
+				67BAC43B1549C49D004EC7CC /* OscillatorDetailView.mm in Sources */,
+				67BAC43C1549C49D004EC7CC /* OscillatorView.mm in Sources */,
+				67BAC43D1549C49D004EC7CC /* FilterView.mm in Sources */,
+				67BAC43E1549C49D004EC7CC /* ArpeggioView.mm in Sources */,
+				67BAC4821549C8DC004EC7CC /* arpeggio.cpp in Sources */,
+				67BAC4941549C8F0004EC7CC /* key_stack.cpp in Sources */,
+				67BAC4951549C8F0004EC7CC /* lag_processor.cpp in Sources */,
+				67BAC4961549C8F0004EC7CC /* parameter.cpp in Sources */,
+				67BAC4971549C8F0004EC7CC /* filter.cpp in Sources */,
+				67BAC4981549C8F0004EC7CC /* controller.cpp in Sources */,
+				67BAC4991549C8F0004EC7CC /* envelope.cpp in Sources */,
+				67BAC49A1549C8F0004EC7CC /* modulation.cpp in Sources */,
+				67BAC49B1549C8F0004EC7CC /* oscillator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +648,8 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Instrument/Instrument-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Instrument/Instrument-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -391,6 +661,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Instrument/Instrument-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Instrument/Instrument-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
