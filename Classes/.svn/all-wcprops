@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/107/trunk/mobilesynth/Classes
+END
+WhiteKeyView.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/88/trunk/mobilesynth/Classes/WhiteKeyView.m
+END
+ControlScrollView.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/71/trunk/mobilesynth/Classes/ControlScrollView.h
+END
+ControlScrollView.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/71/trunk/mobilesynth/Classes/ControlScrollView.m
+END
+FilterView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/70/trunk/mobilesynth/Classes/FilterView.mm
+END
+ArpeggioView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/86/trunk/mobilesynth/Classes/ArpeggioView.mm
+END
+OctaveView.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/88/trunk/mobilesynth/Classes/OctaveView.h
+END
+TouchForwardingUIScrollView.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/TouchForwardingUIScrollView.h
+END
+mobilesynthViewController.mm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/mobilesynthViewController.mm
+END
+FilterView.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/70/trunk/mobilesynth/Classes/FilterView.h
+END
+OctaveView.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/88/trunk/mobilesynth/Classes/OctaveView.m
+END
+AudioOutput.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/16/trunk/mobilesynth/Classes/AudioOutput.h
+END
+TouchForwardingUIScrollView.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/TouchForwardingUIScrollView.m
+END
+KeyView.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/77/trunk/mobilesynth/Classes/KeyView.h
+END
+AudioOutput.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/16/trunk/mobilesynth/Classes/AudioOutput.m
+END
+KeyView.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/88/trunk/mobilesynth/Classes/KeyView.m
+END
+ModulationView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/25/trunk/mobilesynth/Classes/ModulationView.mm
+END
+OscillatorView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/58/trunk/mobilesynth/Classes/OscillatorView.mm
+END
+ArpeggioView.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/86/trunk/mobilesynth/Classes/ArpeggioView.h
+END
+mobilesynthAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/mobilesynth/Classes/mobilesynthAppDelegate.h
+END
+OscillatorDetailView.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/24/trunk/mobilesynth/Classes/OscillatorDetailView.h
+END
+EnvelopeView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/11/trunk/mobilesynth/Classes/EnvelopeView.mm
+END
+KeyboardView.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/KeyboardView.h
+END
+mobilesynthViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/mobilesynthViewController.h
+END
+KeyboardView.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/90/trunk/mobilesynth/Classes/KeyboardView.m
+END
+ModulationView.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/25/trunk/mobilesynth/Classes/ModulationView.h
+END
+OscillatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/24/trunk/mobilesynth/Classes/OscillatorView.h
+END
+EnvelopeView.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/8/trunk/mobilesynth/Classes/EnvelopeView.h
+END
+mobilesynthAppDelegate.mm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/mobilesynth/Classes/mobilesynthAppDelegate.mm
+END
+OscillatorDetailView.mm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/54/trunk/mobilesynth/Classes/OscillatorDetailView.mm
+END
+BlackKeyView.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/77/trunk/mobilesynth/Classes/BlackKeyView.h
+END
+WhiteKeyView.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/77/trunk/mobilesynth/Classes/WhiteKeyView.h
+END
+BlackKeyView.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/77/trunk/mobilesynth/Classes/BlackKeyView.m
+END

@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/107/trunk/mobilesynth/Classes/synth
+END
+lag_processor_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/61/trunk/mobilesynth/Classes/synth/lag_processor_test.cpp
+END
+lag_processor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/lag_processor.cpp
+END
+arpeggio.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/86/trunk/mobilesynth/Classes/synth/arpeggio.h
+END
+lag_processor.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/84/trunk/mobilesynth/Classes/synth/lag_processor.h
+END
+modulation_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/modulation_test.cpp
+END
+oscillator_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/oscillator_test.cpp
+END
+modulation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/modulation.cpp
+END
+oscillator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/oscillator.cpp
+END
+envelope_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/40/trunk/mobilesynth/Classes/synth/envelope_test.cpp
+END
+key_stack_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/key_stack_test.cpp
+END
+key_stack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/key_stack.cpp
+END
+envelope.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/envelope.cpp
+END
+modulation.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/trunk/mobilesynth/Classes/synth/modulation.h
+END
+oscillator.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/84/trunk/mobilesynth/Classes/synth/oscillator.h
+END
+parameter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/32/trunk/mobilesynth/Classes/synth/parameter.cpp
+END
+test_util.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22/trunk/mobilesynth/Classes/synth/test_util.h
+END
+controller_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/controller_test.cpp
+END
+envelope.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/41/trunk/mobilesynth/Classes/synth/envelope.h
+END
+key_stack.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/key_stack.h
+END
+controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/controller.cpp
+END
+synth-jni.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/107/trunk/mobilesynth/Classes/synth/synth-jni.cpp
+END
+filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/filter.cpp
+END
+parameter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/parameter.h
+END
+controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/controller.h
+END
+synth-jni.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/107/trunk/mobilesynth/Classes/synth/synth-jni.h
+END
+filter.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/filter.h
+END
+arpeggio_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/82/trunk/mobilesynth/Classes/synth/arpeggio_test.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/107/trunk/mobilesynth/Classes/synth/Makefile
+END
+arpeggio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/105/trunk/mobilesynth/Classes/synth/arpeggio.cpp
+END

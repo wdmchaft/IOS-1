@@ -25,6 +25,7 @@
 @synthesize midi_player;
 @synthesize webView;
 @synthesize learn;
+
 - (void)setDetailItem:(id)newDetailItem {
     
     //Set the title   
@@ -226,7 +227,7 @@
         [self.navigationController popViewControllerAnimated:YES];//not to see pop
     }
     
-    if([buttonTitle isEqualToString:@"Learn Song"]){
+   if([buttonTitle isEqualToString:@"Learn Song"]){
         if(self.learn == nil)
         {
             mobilesynthViewController *start_app = [[mobilesynthViewController alloc]
