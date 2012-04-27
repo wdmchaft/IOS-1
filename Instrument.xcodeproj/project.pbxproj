@@ -25,6 +25,15 @@
 		67135299153CD8D30098E83A /* start_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67135298153CD8D30098E83A /* start_bg.jpg */; };
 		6713529B153CDD530098E83A /* start_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6713529A153CDD530098E83A /* start_bg.png */; };
 		671352A2153D0D880098E83A /* white_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 671352A1153D0D880098E83A /* white_key.png */; };
+		6777C47E154A24D6009CEAC0 /* arpeggio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C46E154A24D6009CEAC0 /* arpeggio.cpp */; };
+		6777C47F154A24D6009CEAC0 /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C470154A24D6009CEAC0 /* controller.cpp */; };
+		6777C480154A24D6009CEAC0 /* envelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C472154A24D6009CEAC0 /* envelope.cpp */; };
+		6777C481154A24D6009CEAC0 /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C474154A24D6009CEAC0 /* filter.cpp */; };
+		6777C482154A24D6009CEAC0 /* key_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C476154A24D6009CEAC0 /* key_stack.cpp */; };
+		6777C483154A24D6009CEAC0 /* lag_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C478154A24D6009CEAC0 /* lag_processor.cpp */; };
+		6777C484154A24D6009CEAC0 /* modulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C47A154A24D6009CEAC0 /* modulation.cpp */; };
+		6777C485154A24D6009CEAC0 /* parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C47C154A24D6009CEAC0 /* parameter.cpp */; };
+		6777C48C154A2718009CEAC0 /* key_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6777C48A154A2717009CEAC0 /* key_stack.cpp */; };
 		677C26F31528E75900631745 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677C26F21528E75900631745 /* RightView.xib */; };
 		677C26FC1529FF2100631745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FB1529FF2100631745 /* AVFoundation.framework */; };
 		677C26FF1529FF2700631745 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677C26FE1529FF2700631745 /* CoreAudio.framework */; };
@@ -67,15 +76,6 @@
 		67BAC47A1549C51B004EC7CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46C1549C51B004EC7CC /* MainWindow.xib */; };
 		67BAC47B1549C51B004EC7CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46D1549C51B004EC7CC /* Info.plist */; };
 		67BAC47E1549C553004EC7CC /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */; };
-		67BAC4821549C8DC004EC7CC /* arpeggio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4811549C8DC004EC7CC /* arpeggio.cpp */; };
-		67BAC4941549C8F0004EC7CC /* key_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4841549C8F0004EC7CC /* key_stack.cpp */; };
-		67BAC4951549C8F0004EC7CC /* lag_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4861549C8F0004EC7CC /* lag_processor.cpp */; };
-		67BAC4961549C8F0004EC7CC /* parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4881549C8F0004EC7CC /* parameter.cpp */; };
-		67BAC4971549C8F0004EC7CC /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48A1549C8F0004EC7CC /* filter.cpp */; };
-		67BAC4981549C8F0004EC7CC /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48C1549C8F0004EC7CC /* controller.cpp */; };
-		67BAC4991549C8F0004EC7CC /* envelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC48E1549C8F0004EC7CC /* envelope.cpp */; };
-		67BAC49A1549C8F0004EC7CC /* modulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4901549C8F0004EC7CC /* modulation.cpp */; };
-		67BAC49B1549C8F0004EC7CC /* oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC4921549C8F0004EC7CC /* oscillator.cpp */; };
 		67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3BB1527FA7D00F74374 /* ViewController.xib */; };
 		67BBD3C41527FCA900F74374 /* startMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3C21527FCA900F74374 /* startMenu.m */; };
 		67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3C31527FCA900F74374 /* startMenu.xib */; };
@@ -112,6 +112,26 @@
 		67135298153CD8D30098E83A /* start_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start_bg.jpg; path = ../start_bg.jpg; sourceTree = "<group>"; };
 		6713529A153CDD530098E83A /* start_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_bg.png; sourceTree = "<group>"; };
 		671352A1153D0D880098E83A /* white_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_key.png; sourceTree = "<group>"; };
+		6777C46E154A24D6009CEAC0 /* arpeggio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arpeggio.cpp; sourceTree = "<group>"; };
+		6777C46F154A24D6009CEAC0 /* arpeggio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arpeggio.h; sourceTree = "<group>"; };
+		6777C470154A24D6009CEAC0 /* controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controller.cpp; sourceTree = "<group>"; };
+		6777C471154A24D6009CEAC0 /* controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controller.h; sourceTree = "<group>"; };
+		6777C472154A24D6009CEAC0 /* envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = envelope.cpp; sourceTree = "<group>"; };
+		6777C473154A24D6009CEAC0 /* envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = envelope.h; sourceTree = "<group>"; };
+		6777C474154A24D6009CEAC0 /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
+		6777C475154A24D6009CEAC0 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		6777C476154A24D6009CEAC0 /* key_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = key_stack.cpp; sourceTree = "<group>"; };
+		6777C477154A24D6009CEAC0 /* key_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key_stack.h; sourceTree = "<group>"; };
+		6777C478154A24D6009CEAC0 /* lag_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lag_processor.cpp; sourceTree = "<group>"; };
+		6777C479154A24D6009CEAC0 /* lag_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lag_processor.h; sourceTree = "<group>"; };
+		6777C47A154A24D6009CEAC0 /* modulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modulation.cpp; sourceTree = "<group>"; };
+		6777C47B154A24D6009CEAC0 /* modulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modulation.h; sourceTree = "<group>"; };
+		6777C47C154A24D6009CEAC0 /* parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parameter.cpp; sourceTree = "<group>"; };
+		6777C47D154A24D6009CEAC0 /* parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parameter.h; sourceTree = "<group>"; };
+		6777C486154A26DF009CEAC0 /* oscillator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oscillator.cpp; sourceTree = "<group>"; };
+		6777C487154A26DF009CEAC0 /* oscillator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oscillator.h; sourceTree = "<group>"; };
+		6777C48A154A2717009CEAC0 /* key_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = key_stack.cpp; sourceTree = "<group>"; };
+		6777C48B154A2718009CEAC0 /* key_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key_stack.h; sourceTree = "<group>"; };
 		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		677C26FB1529FF2100631745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -173,24 +193,6 @@
 		67BAC46C1549C51B004EC7CC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		67BAC46D1549C51B004EC7CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		67BAC4811549C8DC004EC7CC /* arpeggio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arpeggio.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/arpeggio.cpp"; sourceTree = "<group>"; };
-		67BAC4831549C8F0004EC7CC /* arpeggio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arpeggio.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/arpeggio.h"; sourceTree = "<group>"; };
-		67BAC4841549C8F0004EC7CC /* key_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = key_stack.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/key_stack.cpp"; sourceTree = "<group>"; };
-		67BAC4851549C8F0004EC7CC /* key_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = key_stack.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/key_stack.h"; sourceTree = "<group>"; };
-		67BAC4861549C8F0004EC7CC /* lag_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lag_processor.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/lag_processor.cpp"; sourceTree = "<group>"; };
-		67BAC4871549C8F0004EC7CC /* lag_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lag_processor.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/lag_processor.h"; sourceTree = "<group>"; };
-		67BAC4881549C8F0004EC7CC /* parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parameter.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/parameter.cpp"; sourceTree = "<group>"; };
-		67BAC4891549C8F0004EC7CC /* parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parameter.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/parameter.h"; sourceTree = "<group>"; };
-		67BAC48A1549C8F0004EC7CC /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filter.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/filter.cpp"; sourceTree = "<group>"; };
-		67BAC48B1549C8F0004EC7CC /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/filter.h"; sourceTree = "<group>"; };
-		67BAC48C1549C8F0004EC7CC /* controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = controller.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/controller.cpp"; sourceTree = "<group>"; };
-		67BAC48D1549C8F0004EC7CC /* controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = controller.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/controller.h"; sourceTree = "<group>"; };
-		67BAC48E1549C8F0004EC7CC /* envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = envelope.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/envelope.cpp"; sourceTree = "<group>"; };
-		67BAC48F1549C8F0004EC7CC /* envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = envelope.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/envelope.h"; sourceTree = "<group>"; };
-		67BAC4901549C8F0004EC7CC /* modulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = modulation.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/modulation.cpp"; sourceTree = "<group>"; };
-		67BAC4911549C8F0004EC7CC /* modulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modulation.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/modulation.h"; sourceTree = "<group>"; };
-		67BAC4921549C8F0004EC7CC /* oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oscillator.cpp; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/oscillator.cpp"; sourceTree = "<group>"; };
-		67BAC4931549C8F0004EC7CC /* oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oscillator.h; path = "../../mobilesynth-read-only/mobilesynth/Classes/synth/oscillator.h"; sourceTree = "<group>"; };
 		67BBD3BB1527FA7D00F74374 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		67BBD3C11527FCA900F74374 /* startMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startMenu.h; path = ../startMenu.h; sourceTree = "<group>"; };
 		67BBD3C21527FCA900F74374 /* startMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = startMenu.m; path = ../startMenu.m; sourceTree = "<group>"; };
@@ -369,6 +371,10 @@
 		67BAC42C1549C485004EC7CC /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				6777C48A154A2717009CEAC0 /* key_stack.cpp */,
+				6777C48B154A2718009CEAC0 /* key_stack.h */,
+				6777C486154A26DF009CEAC0 /* oscillator.cpp */,
+				6777C487154A26DF009CEAC0 /* oscillator.h */,
 				67BAC42D1549C49D004EC7CC /* EnvelopeView.h */,
 				67BAC42E1549C49D004EC7CC /* EnvelopeView.mm */,
 				67BAC42F1549C49D004EC7CC /* ModulationView.h */,
@@ -425,24 +431,22 @@
 		67BAC4801549C8CD004EC7CC /* synth */ = {
 			isa = PBXGroup;
 			children = (
-				67BAC4831549C8F0004EC7CC /* arpeggio.h */,
-				67BAC4841549C8F0004EC7CC /* key_stack.cpp */,
-				67BAC4851549C8F0004EC7CC /* key_stack.h */,
-				67BAC4861549C8F0004EC7CC /* lag_processor.cpp */,
-				67BAC4871549C8F0004EC7CC /* lag_processor.h */,
-				67BAC4881549C8F0004EC7CC /* parameter.cpp */,
-				67BAC4891549C8F0004EC7CC /* parameter.h */,
-				67BAC48A1549C8F0004EC7CC /* filter.cpp */,
-				67BAC48B1549C8F0004EC7CC /* filter.h */,
-				67BAC48C1549C8F0004EC7CC /* controller.cpp */,
-				67BAC48D1549C8F0004EC7CC /* controller.h */,
-				67BAC48E1549C8F0004EC7CC /* envelope.cpp */,
-				67BAC48F1549C8F0004EC7CC /* envelope.h */,
-				67BAC4901549C8F0004EC7CC /* modulation.cpp */,
-				67BAC4911549C8F0004EC7CC /* modulation.h */,
-				67BAC4921549C8F0004EC7CC /* oscillator.cpp */,
-				67BAC4931549C8F0004EC7CC /* oscillator.h */,
-				67BAC4811549C8DC004EC7CC /* arpeggio.cpp */,
+				6777C46E154A24D6009CEAC0 /* arpeggio.cpp */,
+				6777C46F154A24D6009CEAC0 /* arpeggio.h */,
+				6777C470154A24D6009CEAC0 /* controller.cpp */,
+				6777C471154A24D6009CEAC0 /* controller.h */,
+				6777C472154A24D6009CEAC0 /* envelope.cpp */,
+				6777C473154A24D6009CEAC0 /* envelope.h */,
+				6777C474154A24D6009CEAC0 /* filter.cpp */,
+				6777C475154A24D6009CEAC0 /* filter.h */,
+				6777C476154A24D6009CEAC0 /* key_stack.cpp */,
+				6777C477154A24D6009CEAC0 /* key_stack.h */,
+				6777C478154A24D6009CEAC0 /* lag_processor.cpp */,
+				6777C479154A24D6009CEAC0 /* lag_processor.h */,
+				6777C47A154A24D6009CEAC0 /* modulation.cpp */,
+				6777C47B154A24D6009CEAC0 /* modulation.h */,
+				6777C47C154A24D6009CEAC0 /* parameter.cpp */,
+				6777C47D154A24D6009CEAC0 /* parameter.h */,
 			);
 			name = synth;
 			sourceTree = "<group>";
@@ -570,15 +574,15 @@
 				67BAC43C1549C49D004EC7CC /* OscillatorView.mm in Sources */,
 				67BAC43D1549C49D004EC7CC /* FilterView.mm in Sources */,
 				67BAC43E1549C49D004EC7CC /* ArpeggioView.mm in Sources */,
-				67BAC4821549C8DC004EC7CC /* arpeggio.cpp in Sources */,
-				67BAC4941549C8F0004EC7CC /* key_stack.cpp in Sources */,
-				67BAC4951549C8F0004EC7CC /* lag_processor.cpp in Sources */,
-				67BAC4961549C8F0004EC7CC /* parameter.cpp in Sources */,
-				67BAC4971549C8F0004EC7CC /* filter.cpp in Sources */,
-				67BAC4981549C8F0004EC7CC /* controller.cpp in Sources */,
-				67BAC4991549C8F0004EC7CC /* envelope.cpp in Sources */,
-				67BAC49A1549C8F0004EC7CC /* modulation.cpp in Sources */,
-				67BAC49B1549C8F0004EC7CC /* oscillator.cpp in Sources */,
+				6777C47E154A24D6009CEAC0 /* arpeggio.cpp in Sources */,
+				6777C47F154A24D6009CEAC0 /* controller.cpp in Sources */,
+				6777C480154A24D6009CEAC0 /* envelope.cpp in Sources */,
+				6777C481154A24D6009CEAC0 /* filter.cpp in Sources */,
+				6777C482154A24D6009CEAC0 /* key_stack.cpp in Sources */,
+				6777C483154A24D6009CEAC0 /* lag_processor.cpp in Sources */,
+				6777C484154A24D6009CEAC0 /* modulation.cpp in Sources */,
+				6777C485154A24D6009CEAC0 /* parameter.cpp in Sources */,
+				6777C48C154A2718009CEAC0 /* key_stack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
