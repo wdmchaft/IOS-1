@@ -234,6 +234,8 @@
                                  initWithNibName:@"mobilesynthViewController" bundle:[NSBundle mainBundle]];
             self.learn = start_app;
         }
+       
+     
         
         [self.navigationController pushViewController:learn animated:YES];
     }

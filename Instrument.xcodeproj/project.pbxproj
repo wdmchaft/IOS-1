@@ -61,7 +61,6 @@
 		678439B31526AE95009744CC /* register_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B21526AE95009744CC /* register_bg.png */; };
 		678439B51526B9EE009744CC /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B41526B9EE009744CC /* textfield.png */; };
 		678439C71527CDED009744CC /* CoreDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 678439C61527CDED009744CC /* CoreDataAccess.m */; };
-		67BAC46E1549C51B004EC7CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4601549C51B004EC7CC /* Default.png */; };
 		67BAC46F1549C51B004EC7CC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4611549C51B004EC7CC /* Icon.png */; };
 		67BAC4701549C51B004EC7CC /* release.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4621549C51B004EC7CC /* release.png */; };
 		67BAC4711549C51B004EC7CC /* sustain.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4631549C51B004EC7CC /* sustain.png */; };
@@ -86,6 +85,14 @@
 		67BEDE931523F402000360EC /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BEDE911523F402000360EC /* Register.m */; };
 		67BEDE941523F402000360EC /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BEDE921523F402000360EC /* Register.xib */; };
 		67BEDEA81523FDA2000360EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BEDEA71523FDA2000360EC /* CoreData.framework */; };
+		67D130A2154B7A6A007619ED /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D1309E154B7A69007619ED /* MGSplitViewController.m */; };
+		67D130A3154B7A6A007619ED /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D130A0154B7A69007619ED /* MGSplitDividerView.m */; };
+		67D130A9154B7A7A007619ED /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D130A6154B7A79007619ED /* RootViewController.m */; };
+		67D130AA154B7A7A007619ED /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D130A8154B7A79007619ED /* DetailViewController.m */; };
+		67D130AF154B7B60007619ED /* MasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D130AE154B7B60007619ED /* MasterController.m */; };
+		67D130B1154B7D05007619ED /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D130B0154B7D05007619ED /* MGSplitCornersView.m */; };
+		67D130B4154B9F32007619ED /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D130B2154B9F31007619ED /* MainWindow.xib */; };
+		67D130B5154B9F32007619ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D130B3154B9F32007619ED /* DetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,7 +170,7 @@
 		6777C4CC154A2D6E009CEAC0 /* TouchForwardingUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingUIScrollView.m; sourceTree = "<group>"; };
 		6777C4CD154A2D6E009CEAC0 /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		6777C4CE154A2D6E009CEAC0 /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
-		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
+		677C26F21528E75900631745 /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RightView.xib; path = ../RightView.xib; sourceTree = "<group>"; };
 		677C26FB1529FF2100631745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		677C26FE1529FF2700631745 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		677C27001529FF2C00631745 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
@@ -196,17 +203,31 @@
 		67BBD3C11527FCA900F74374 /* startMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startMenu.h; path = ../startMenu.h; sourceTree = "<group>"; };
 		67BBD3C21527FCA900F74374 /* startMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = startMenu.m; path = ../startMenu.m; sourceTree = "<group>"; };
 		67BBD3C31527FCA900F74374 /* startMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = startMenu.xib; path = ../startMenu.xib; sourceTree = "<group>"; };
-		67BBD3DB15280B0900F74374 /* Master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Master.h; sourceTree = "<group>"; };
-		67BBD3DC15280B0900F74374 /* Master.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Master.m; sourceTree = "<group>"; };
-		67BBD3DD15280B0900F74374 /* Master.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Master.xib; sourceTree = "<group>"; };
-		67BBD3E015280B3E00F74374 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
-		67BBD3E115280B3E00F74374 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
-		67BBD3E615280FA600F74374 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
-		67BBD3E715280FA600F74374 /* RightView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RightView.mm; sourceTree = "<group>"; };
+		67BBD3DB15280B0900F74374 /* Master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Master.h; path = ../Master.h; sourceTree = "<group>"; };
+		67BBD3DC15280B0900F74374 /* Master.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Master.m; path = ../Master.m; sourceTree = "<group>"; };
+		67BBD3DD15280B0900F74374 /* Master.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Master.xib; path = ../Master.xib; sourceTree = "<group>"; };
+		67BBD3E015280B3E00F74374 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftView.h; path = ../LeftView.h; sourceTree = "<group>"; };
+		67BBD3E115280B3E00F74374 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftView.m; path = ../LeftView.m; sourceTree = "<group>"; };
+		67BBD3E615280FA600F74374 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightView.h; path = ../RightView.h; sourceTree = "<group>"; };
+		67BBD3E715280FA600F74374 /* RightView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RightView.mm; path = ../RightView.mm; sourceTree = "<group>"; };
 		67BEDE901523F402000360EC /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register.h; path = ../Register.h; sourceTree = "<group>"; };
 		67BEDE911523F402000360EC /* Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register.m; path = ../Register.m; sourceTree = "<group>"; };
 		67BEDE921523F402000360EC /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = ../Register.xib; sourceTree = "<group>"; };
 		67BEDEA71523FDA2000360EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		67D1309D154B7A69007619ED /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
+		67D1309E154B7A69007619ED /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
+		67D1309F154B7A69007619ED /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
+		67D130A0154B7A69007619ED /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
+		67D130A1154B7A69007619ED /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
+		67D130A5154B7A79007619ED /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		67D130A6154B7A79007619ED /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		67D130A7154B7A79007619ED /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		67D130A8154B7A79007619ED /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		67D130AD154B7B60007619ED /* MasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterController.h; sourceTree = "<group>"; };
+		67D130AE154B7B60007619ED /* MasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterController.m; sourceTree = "<group>"; };
+		67D130B0154B7D05007619ED /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
+		67D130B2154B9F31007619ED /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Downloads/mattgemmell-MGSplitViewController-580747f/MainWindow.xib"; sourceTree = "<group>"; };
+		67D130B3154B9F32007619ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailView.xib; path = "../../Downloads/mattgemmell-MGSplitViewController-580747f/DetailView.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,25 +252,31 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
-				6777C490154A2D6E009CEAC0 /* Classes */,
-				67BAC47C1549C544004EC7CC /* IPad */,
-				67BAC45F1549C509004EC7CC /* Resources */,
-				67BAC45B1549C4CD004EC7CC /* Other Sources */,
+				67D130B2154B9F31007619ED /* MainWindow.xib */,
+				67D130B3154B9F32007619ED /* DetailView.xib */,
+				67D130A7154B7A79007619ED /* DetailViewController.h */,
+				67D130AD154B7B60007619ED /* MasterController.h */,
+				67D130A1154B7A69007619ED /* MGSplitCornersView.h */,
+				67D1309F154B7A69007619ED /* MGSplitDividerView.h */,
+				67D1309D154B7A69007619ED /* MGSplitViewController.h */,
+				67D130A5154B7A79007619ED /* RootViewController.h */,
+				67D130A8154B7A79007619ED /* DetailViewController.m */,
+				67D130AE154B7B60007619ED /* MasterController.m */,
+				67D130B0154B7D05007619ED /* MGSplitCornersView.m */,
+				67D130A0154B7A69007619ED /* MGSplitDividerView.m */,
+				67D1309E154B7A69007619ED /* MGSplitViewController.m */,
+				67D130A6154B7A79007619ED /* RootViewController.m */,
 				67075171153E165A004DEB64 /* newBG.png */,
 				671352A1153D0D880098E83A /* white_key.png */,
-				6713528C153C8C480098E83A /* Music */,
-				677C26F21528E75900631745 /* RightView.xib */,
-				67BBD3E615280FA600F74374 /* RightView.h */,
-				67BBD3E715280FA600F74374 /* RightView.mm */,
-				67BBD3DB15280B0900F74374 /* Master.h */,
-				67BBD3DC15280B0900F74374 /* Master.m */,
-				67BBD3DD15280B0900F74374 /* Master.xib */,
-				67BBD3E015280B3E00F74374 /* LeftView.h */,
-				67BBD3E115280B3E00F74374 /* LeftView.m */,
+				6777C490154A2D6E009CEAC0 /* Classes */,
+				670BA81E152024F80063ADE0 /* Frameworks */,
 				678439C41527CD1D009744CC /* images */,
 				670BA825152024F80063ADE0 /* Instrument */,
-				670BA81E152024F80063ADE0 /* Frameworks */,
+				67BAC47C1549C544004EC7CC /* IPad */,
+				6713528C153C8C480098E83A /* Music */,
+				67BAC45B1549C4CD004EC7CC /* Other Sources */,
 				670BA81C152024F80063ADE0 /* Products */,
+				67BAC45F1549C509004EC7CC /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,23 +306,31 @@
 		670BA825152024F80063ADE0 /* Instrument */ = {
 			isa = PBXGroup;
 			children = (
-				67135293153CB10E0098E83A /* LearnSong.h */,
-				67135294153CB10E0098E83A /* LearnSong.m */,
-				67135295153CB10E0098E83A /* LearnSong.xib */,
-				67BBD3C11527FCA900F74374 /* startMenu.h */,
-				67BBD3C21527FCA900F74374 /* startMenu.m */,
-				67BBD3C31527FCA900F74374 /* startMenu.xib */,
-				67BEDE901523F402000360EC /* Register.h */,
-				67BEDE911523F402000360EC /* Register.m */,
-				67BEDE921523F402000360EC /* Register.xib */,
-				6784379115265210009744CC /* Model.xcdatamodeld */,
-				6784379415265249009744CC /* Users.h */,
-				6784379515265249009744CC /* Users.m */,
 				670BA82E152024F80063ADE0 /* AppDelegate.h */,
-				670BA82F152024F80063ADE0 /* AppDelegate.m */,
 				678439C51527CDED009744CC /* CoreDataAccess.h */,
+				67135293153CB10E0098E83A /* LearnSong.h */,
+				67BBD3E015280B3E00F74374 /* LeftView.h */,
+				67BBD3DB15280B0900F74374 /* Master.h */,
+				67BEDE901523F402000360EC /* Register.h */,
+				67BBD3E615280FA600F74374 /* RightView.h */,
+				67BBD3C11527FCA900F74374 /* startMenu.h */,
+				6784379415265249009744CC /* Users.h */,
+				670BA82F152024F80063ADE0 /* AppDelegate.m */,
 				678439C61527CDED009744CC /* CoreDataAccess.m */,
+				67135294153CB10E0098E83A /* LearnSong.m */,
+				67BBD3E115280B3E00F74374 /* LeftView.m */,
+				67BBD3DC15280B0900F74374 /* Master.m */,
+				67BEDE911523F402000360EC /* Register.m */,
+				67BBD3C21527FCA900F74374 /* startMenu.m */,
+				6784379515265249009744CC /* Users.m */,
+				67BBD3E715280FA600F74374 /* RightView.mm */,
+				67135295153CB10E0098E83A /* LearnSong.xib */,
+				67BBD3DD15280B0900F74374 /* Master.xib */,
+				67BEDE921523F402000360EC /* Register.xib */,
+				677C26F21528E75900631745 /* RightView.xib */,
+				67BBD3C31527FCA900F74374 /* startMenu.xib */,
 				67BBD3BB1527FA7D00F74374 /* ViewController.xib */,
+				6784379115265210009744CC /* Model.xcdatamodeld */,
 				670BA826152024F80063ADE0 /* Supporting Files */,
 			);
 			path = Instrument;
@@ -512,7 +547,6 @@
 				671352A2153D0D880098E83A /* white_key.png in Resources */,
 				6707516F153E14E8004DEB64 /* selection_bg.png in Resources */,
 				67075172153E165A004DEB64 /* newBG.png in Resources */,
-				67BAC46E1549C51B004EC7CC /* Default.png in Resources */,
 				67BAC46F1549C51B004EC7CC /* Icon.png in Resources */,
 				67BAC4701549C51B004EC7CC /* release.png in Resources */,
 				67BAC4711549C51B004EC7CC /* sustain.png in Resources */,
@@ -527,6 +561,8 @@
 				67BAC47A1549C51B004EC7CC /* MainWindow.xib in Resources */,
 				67BAC47B1549C51B004EC7CC /* Info.plist in Resources */,
 				67BAC47E1549C553004EC7CC /* MainWindow-iPad.xib in Resources */,
+				67D130B4154B9F32007619ED /* MainWindow.xib in Resources */,
+				67D130B5154B9F32007619ED /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +609,12 @@
 				6777C4ED154A2D6E009CEAC0 /* parameter.cpp in Sources */,
 				6777C4EF154A2D6E009CEAC0 /* TouchForwardingUIScrollView.m in Sources */,
 				6777C4F0154A2D6E009CEAC0 /* WhiteKeyView.m in Sources */,
+				67D130A2154B7A6A007619ED /* MGSplitViewController.m in Sources */,
+				67D130A3154B7A6A007619ED /* MGSplitDividerView.m in Sources */,
+				67D130A9154B7A7A007619ED /* RootViewController.m in Sources */,
+				67D130AA154B7A7A007619ED /* DetailViewController.m in Sources */,
+				67D130AF154B7B60007619ED /* MasterController.m in Sources */,
+				67D130B1154B7D05007619ED /* MGSplitCornersView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +687,7 @@
 				GCC_VERSION = "";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Instrument/Instrument-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -657,6 +700,7 @@
 				GCC_PREFIX_HEADER = "Instrument/Instrument-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Instrument/Instrument-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
