@@ -20,7 +20,7 @@
 @synthesize start_app;
 @synthesize user_table;
 @synthesize users;
-@synthesize con;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,12 +59,9 @@
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-  //  start_app =   [[Master alloc] initWithNibName:@"Master" bundle:[NSBundle mainBundle]];
-   con  =   [[MasterController alloc] init];
-    
-   // MGSplitViewController * start_app 
-  //  self.splitViewController = [[MGSplitViewController alloc] init];
-    [self.navigationController pushViewController:self.con animated:YES];
+    start_app =   [[Master alloc] initWithNibName:@"Master" bundle:[NSBundle mainBundle]];
+  self.start_app = start_app;
+    [self.navigationController pushViewController:self.start_app animated:YES];
 
 }
 
