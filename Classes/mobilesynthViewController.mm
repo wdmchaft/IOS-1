@@ -22,6 +22,7 @@
 #include "synth/oscillator.h"
 #include "synth/filter.h"
 #include "synth/parameter.h"
+#include "Display_music.h"
 
 
 @implementation mobilesynthViewController
@@ -37,6 +38,7 @@
 @synthesize envelopeView;
 @synthesize filterEnvelopeView;
 @synthesize arpeggioView;
+@synthesize menuPageControl;
 
 #define degreesToRadians(x) (M_PI * x / 180.0)
 
@@ -95,8 +97,9 @@ static float GetFrequencyForNote(int note) {
   // Put the page control vertically in the top left corner.
   controlPageControl.transform =
     CGAffineTransformRotate(controlPageControl.transform, degreesToRadians(90));
-  controlPageControl.transform =
-    CGAffineTransformTranslate(controlPageControl.transform, 47, 50);
+    menuPageControl.transform =
+    CGAffineTransformRotate(menuPageControl.transform, degreesToRadians(90));
+
   
   // New controls panels should be added here
   NSMutableArray *controlViews = [[NSMutableArray alloc] init]; 

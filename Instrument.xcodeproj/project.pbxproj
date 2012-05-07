@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6707516F153E14E8004DEB64 /* selection_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6707516E153E14E8004DEB64 /* selection_bg.png */; };
 		67075172153E165A004DEB64 /* newBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 67075171153E165A004DEB64 /* newBG.png */; };
 		670BA820152024F80063ADE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670BA81F152024F80063ADE0 /* UIKit.framework */; };
 		670BA822152024F80063ADE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670BA821152024F80063ADE0 /* Foundation.framework */; };
@@ -20,11 +19,10 @@
 		67135288153C8C3E0098E83A /* 05carolina.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135284153C8C3E0098E83A /* 05carolina.mid */; };
 		67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135285153C8C3E0098E83A /* 03bumbee.mid */; };
 		6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */ = {isa = PBXBuildFile; fileRef = 67135286153C8C3E0098E83A /* 02astimegoesby.mid */; };
-		67135296153CB10E0098E83A /* LearnSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 67135294153CB10E0098E83A /* LearnSong.m */; };
-		67135297153CB10E0098E83A /* LearnSong.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67135295153CB10E0098E83A /* LearnSong.xib */; };
 		67135299153CD8D30098E83A /* start_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67135298153CD8D30098E83A /* start_bg.jpg */; };
 		6713529B153CDD530098E83A /* start_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6713529A153CDD530098E83A /* start_bg.png */; };
 		671352A2153D0D880098E83A /* white_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 671352A1153D0D880098E83A /* white_key.png */; };
+		672CF65F15585F770079CE59 /* Display_music.m in Sources */ = {isa = PBXBuildFile; fileRef = 672CF65E15585F770079CE59 /* Display_music.m */; };
 		6777C4CF154A2D6E009CEAC0 /* ArpeggioView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */; };
 		6777C4D0154A2D6E009CEAC0 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C494154A2D6E009CEAC0 /* AudioOutput.m */; };
 		6777C4D1154A2D6E009CEAC0 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C496154A2D6E009CEAC0 /* BlackKeyView.m */; };
@@ -58,7 +56,6 @@
 		6784379315265210009744CC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6784379115265210009744CC /* Model.xcdatamodeld */; };
 		6784379615265249009744CC /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784379515265249009744CC /* Users.m */; };
 		67843836152666F2009744CC /* textfield_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 67843835152666F2009744CC /* textfield_bg.png */; };
-		678439B31526AE95009744CC /* register_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B21526AE95009744CC /* register_bg.png */; };
 		678439B51526B9EE009744CC /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 678439B41526B9EE009744CC /* textfield.png */; };
 		678439C71527CDED009744CC /* CoreDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 678439C61527CDED009744CC /* CoreDataAccess.m */; };
 		67BAC46F1549C51B004EC7CC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC4611549C51B004EC7CC /* Icon.png */; };
@@ -76,7 +73,7 @@
 		67BAC47B1549C51B004EC7CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC46D1549C51B004EC7CC /* Info.plist */; };
 		67BAC47E1549C553004EC7CC /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */; };
 		67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3BB1527FA7D00F74374 /* ViewController.xib */; };
-		67BBD3C41527FCA900F74374 /* startMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3C21527FCA900F74374 /* startMenu.m */; };
+		67BBD3C41527FCA900F74374 /* startMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3C21527FCA900F74374 /* startMenu.mm */; };
 		67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3C31527FCA900F74374 /* startMenu.xib */; };
 		67BBD3DE15280B0900F74374 /* Master.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BBD3DC15280B0900F74374 /* Master.m */; };
 		67BBD3DF15280B0900F74374 /* Master.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBD3DD15280B0900F74374 /* Master.xib */; };
@@ -88,7 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6707516E153E14E8004DEB64 /* selection_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selection_bg.png; path = ../selection_bg.png; sourceTree = "<group>"; };
 		67075171153E165A004DEB64 /* newBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBG.png; sourceTree = "<group>"; };
 		670BA81B152024F80063ADE0 /* Instrument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instrument.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670BA81F152024F80063ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -105,12 +101,11 @@
 		67135284153C8C3E0098E83A /* 05carolina.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 05carolina.mid; sourceTree = "<group>"; };
 		67135285153C8C3E0098E83A /* 03bumbee.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 03bumbee.mid; sourceTree = "<group>"; };
 		67135286153C8C3E0098E83A /* 02astimegoesby.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 02astimegoesby.mid; sourceTree = "<group>"; };
-		67135293153CB10E0098E83A /* LearnSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnSong.h; path = ../LearnSong.h; sourceTree = "<group>"; };
-		67135294153CB10E0098E83A /* LearnSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnSong.m; path = ../LearnSong.m; sourceTree = "<group>"; };
-		67135295153CB10E0098E83A /* LearnSong.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnSong.xib; path = ../LearnSong.xib; sourceTree = "<group>"; };
 		67135298153CD8D30098E83A /* start_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start_bg.jpg; path = ../start_bg.jpg; sourceTree = "<group>"; };
 		6713529A153CDD530098E83A /* start_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_bg.png; sourceTree = "<group>"; };
 		671352A1153D0D880098E83A /* white_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_key.png; sourceTree = "<group>"; };
+		672CF65D15585F770079CE59 /* Display_music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display_music.h; sourceTree = "<group>"; };
+		672CF65E15585F770079CE59 /* Display_music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display_music.m; sourceTree = "<group>"; };
 		6777C491154A2D6E009CEAC0 /* ArpeggioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpeggioView.h; sourceTree = "<group>"; };
 		6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ArpeggioView.mm; sourceTree = "<group>"; };
 		6777C493154A2D6E009CEAC0 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
@@ -171,7 +166,6 @@
 		6784379415265249009744CC /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
 		6784379515265249009744CC /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
 		67843835152666F2009744CC /* textfield_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield_bg.png; path = ../textfield_bg.png; sourceTree = "<group>"; };
-		678439B21526AE95009744CC /* register_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = register_bg.png; path = ../register_bg.png; sourceTree = "<group>"; };
 		678439B41526B9EE009744CC /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield.png; path = ../textfield.png; sourceTree = "<group>"; };
 		678439C51527CDED009744CC /* CoreDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataAccess.h; sourceTree = "<group>"; };
 		678439C61527CDED009744CC /* CoreDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataAccess.m; sourceTree = "<group>"; };
@@ -193,14 +187,13 @@
 		67BAC47D1549C553004EC7CC /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		67BBD3BB1527FA7D00F74374 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		67BBD3C11527FCA900F74374 /* startMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startMenu.h; path = ../startMenu.h; sourceTree = "<group>"; };
-		67BBD3C21527FCA900F74374 /* startMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = startMenu.m; path = ../startMenu.m; sourceTree = "<group>"; };
+		67BBD3C21527FCA900F74374 /* startMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = startMenu.mm; path = ../startMenu.mm; sourceTree = "<group>"; };
 		67BBD3C31527FCA900F74374 /* startMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = startMenu.xib; path = ../startMenu.xib; sourceTree = "<group>"; };
 		67BBD3DB15280B0900F74374 /* Master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Master.h; path = ../Master.h; sourceTree = "<group>"; };
 		67BBD3DC15280B0900F74374 /* Master.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Master.m; path = ../Master.m; sourceTree = "<group>"; };
 		67BBD3DD15280B0900F74374 /* Master.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Master.xib; path = ../Master.xib; sourceTree = "<group>"; };
 		67BBD3E015280B3E00F74374 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftView.h; path = ../LeftView.h; sourceTree = "<group>"; };
 		67BBD3E115280B3E00F74374 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftView.m; path = ../LeftView.m; sourceTree = "<group>"; };
-		67BBD3E615280FA600F74374 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightView.h; path = ../RightView.h; sourceTree = "<group>"; };
 		67BBD3E715280FA600F74374 /* RightView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RightView.mm; path = ../RightView.mm; sourceTree = "<group>"; };
 		67BEDE901523F402000360EC /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register.h; path = ../Register.h; sourceTree = "<group>"; };
 		67BEDE911523F402000360EC /* Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register.m; path = ../Register.m; sourceTree = "<group>"; };
@@ -272,23 +265,19 @@
 			children = (
 				670BA82E152024F80063ADE0 /* AppDelegate.h */,
 				678439C51527CDED009744CC /* CoreDataAccess.h */,
-				67135293153CB10E0098E83A /* LearnSong.h */,
 				67BBD3E015280B3E00F74374 /* LeftView.h */,
 				67BBD3DB15280B0900F74374 /* Master.h */,
 				67BEDE901523F402000360EC /* Register.h */,
-				67BBD3E615280FA600F74374 /* RightView.h */,
 				67BBD3C11527FCA900F74374 /* startMenu.h */,
 				6784379415265249009744CC /* Users.h */,
 				670BA82F152024F80063ADE0 /* AppDelegate.m */,
 				678439C61527CDED009744CC /* CoreDataAccess.m */,
-				67135294153CB10E0098E83A /* LearnSong.m */,
 				67BBD3E115280B3E00F74374 /* LeftView.m */,
 				67BBD3DC15280B0900F74374 /* Master.m */,
 				67BEDE911523F402000360EC /* Register.m */,
-				67BBD3C21527FCA900F74374 /* startMenu.m */,
+				67BBD3C21527FCA900F74374 /* startMenu.mm */,
 				6784379515265249009744CC /* Users.m */,
 				67BBD3E715280FA600F74374 /* RightView.mm */,
-				67135295153CB10E0098E83A /* LearnSong.xib */,
 				67BBD3DD15280B0900F74374 /* Master.xib */,
 				67BEDE921523F402000360EC /* Register.xib */,
 				677C26F21528E75900631745 /* RightView.xib */,
@@ -392,11 +381,9 @@
 		678439C41527CD1D009744CC /* images */ = {
 			isa = PBXGroup;
 			children = (
-				6707516E153E14E8004DEB64 /* selection_bg.png */,
 				6713529A153CDD530098E83A /* start_bg.png */,
 				67135298153CD8D30098E83A /* start_bg.jpg */,
 				678439B41526B9EE009744CC /* textfield.png */,
-				678439B21526AE95009744CC /* register_bg.png */,
 				67843835152666F2009744CC /* textfield_bg.png */,
 			);
 			name = images;
@@ -426,6 +413,8 @@
 				67BAC4691549C51B004EC7CC /* square-wave.png */,
 				67BAC46A1549C51B004EC7CC /* mobilesynth.png */,
 				67BAC46B1549C51B004EC7CC /* mobilesynthViewController.xib */,
+				672CF65D15585F770079CE59 /* Display_music.h */,
+				672CF65E15585F770079CE59 /* Display_music.m */,
 				67BAC46C1549C51B004EC7CC /* MainWindow.xib */,
 				67BAC46D1549C51B004EC7CC /* Info.plist */,
 			);
@@ -494,7 +483,6 @@
 				670BA82A152024F80063ADE0 /* InfoPlist.strings in Resources */,
 				67BEDE941523F402000360EC /* Register.xib in Resources */,
 				67843836152666F2009744CC /* textfield_bg.png in Resources */,
-				678439B31526AE95009744CC /* register_bg.png in Resources */,
 				678439B51526B9EE009744CC /* textfield.png in Resources */,
 				67BBD3BD1527FA7D00F74374 /* ViewController.xib in Resources */,
 				67BBD3C51527FCA900F74374 /* startMenu.xib in Resources */,
@@ -505,11 +493,9 @@
 				67135288153C8C3E0098E83A /* 05carolina.mid in Resources */,
 				67135289153C8C3E0098E83A /* 03bumbee.mid in Resources */,
 				6713528A153C8C3E0098E83A /* 02astimegoesby.mid in Resources */,
-				67135297153CB10E0098E83A /* LearnSong.xib in Resources */,
 				67135299153CD8D30098E83A /* start_bg.jpg in Resources */,
 				6713529B153CDD530098E83A /* start_bg.png in Resources */,
 				671352A2153D0D880098E83A /* white_key.png in Resources */,
-				6707516F153E14E8004DEB64 /* selection_bg.png in Resources */,
 				67075172153E165A004DEB64 /* newBG.png in Resources */,
 				67BAC46F1549C51B004EC7CC /* Icon.png in Resources */,
 				67BAC4701549C51B004EC7CC /* release.png in Resources */,
@@ -541,11 +527,10 @@
 				6784379315265210009744CC /* Model.xcdatamodeld in Sources */,
 				6784379615265249009744CC /* Users.m in Sources */,
 				678439C71527CDED009744CC /* CoreDataAccess.m in Sources */,
-				67BBD3C41527FCA900F74374 /* startMenu.m in Sources */,
+				67BBD3C41527FCA900F74374 /* startMenu.mm in Sources */,
 				67BBD3DE15280B0900F74374 /* Master.m in Sources */,
 				67BBD3E215280B3E00F74374 /* LeftView.m in Sources */,
 				67BBD3E915280FA700F74374 /* RightView.mm in Sources */,
-				67135296153CB10E0098E83A /* LearnSong.m in Sources */,
 				6777C4CF154A2D6E009CEAC0 /* ArpeggioView.mm in Sources */,
 				6777C4D0154A2D6E009CEAC0 /* AudioOutput.m in Sources */,
 				6777C4D1154A2D6E009CEAC0 /* BlackKeyView.m in Sources */,
@@ -571,6 +556,7 @@
 				6777C4ED154A2D6E009CEAC0 /* parameter.cpp in Sources */,
 				6777C4EF154A2D6E009CEAC0 /* TouchForwardingUIScrollView.m in Sources */,
 				6777C4F0154A2D6E009CEAC0 /* WhiteKeyView.m in Sources */,
+				672CF65F15585F770079CE59 /* Display_music.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,19 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-@class LeftView;
-@class RightView;
+
+@class MasterDetailSplitController;
+@class ColorListMasterController;
+@class APSplitViewController;
 @interface Master : UIViewController
 
 	{
-    	    LeftView *left;
-    	    RightView *right;
-    	    UISplitViewController *splitViewController;
+    	    ColorListMasterController *left;
+    	    MasterDetailSplitController *right;
+    	    APSplitViewController *splitViewController;
     	 
     	}
-	 
-	@property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
-	@property (nonatomic, retain) IBOutlet LeftView *left;
-	@property (nonatomic, retain) IBOutlet RightView *right;
+
+	@property (nonatomic, retain) IBOutlet APSplitViewController *splitViewController;
+	@property (nonatomic, retain) IBOutlet ColorListMasterController *left;
+	@property (nonatomic, retain) IBOutlet MasterDetailSplitController *right;
 	 
 @end

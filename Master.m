@@ -9,6 +9,9 @@
 #import "Master.h"
 #import "LeftView.h"
 #import "RightView.h"
+
+
+
 @interface Master ()
 
 @end
@@ -37,22 +40,15 @@
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     //    [appDelegate showProgressHUD:@"Loading"];
     // Do any additional setup after loading the view from its nib.
-    left = [[LeftView alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *leftNav = [[UINavigationController alloc] initWithRootViewController:left];
-    right = [[RightView alloc] initWithNibName:@"RightView" bundle:nil];
-    UINavigationController *rightNav = [[UINavigationController alloc] initWithRootViewController:right];
-    left.right = right;
+  
+
     
-    splitViewController = [[UISplitViewController alloc] init];
-    splitViewController.viewControllers = [NSArray arrayWithObjects:leftNav,rightNav, nil];
-    splitViewController.delegate = right;
-    self.view = splitViewController.view;
+   // self.view = self.tabBarController;
+
+   
 }
 
-- (BOOL)splitViewController: (UISplitViewController*)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
-{
-    return NO;
-}
+
 
 - (void)viewDidUnload
 {

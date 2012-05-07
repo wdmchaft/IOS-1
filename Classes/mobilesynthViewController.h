@@ -33,6 +33,8 @@ namespace synth { class LowPass; }
   KeyboardView* keyboardView;
   UIScrollView* controlScrollView;
   UIPageControl* controlPageControl;
+  UIPageControl* menuPageControl;
+
         
   OscillatorView* oscillatorView;
   OscillatorDetailView* oscillatorDetailView;
@@ -41,6 +43,7 @@ namespace synth { class LowPass; }
   EnvelopeView* envelopeView;
   EnvelopeView* filterEnvelopeView;
   ArpeggioView* arpeggioView;
+
 
   // Synthesizer components
   AudioOutput* output;
@@ -52,6 +55,7 @@ namespace synth { class LowPass; }
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
 @property (nonatomic, retain) IBOutlet UIScrollView *controlScrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *controlPageControl;
+@property (nonatomic, retain) IBOutlet UIPageControl *menuPageControl;
 
 @property (nonatomic, retain) IBOutlet OscillatorView *oscillatorView;
 @property (nonatomic, retain) IBOutlet OscillatorDetailView *oscillatorDetailView;

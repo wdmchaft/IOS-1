@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class ViewController;
+@class APTabBarControllerForSplitController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
 {
     
   IBOutlet UINavigationController *navigationController;
 }
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (strong, nonatomic) ViewController *viewController;
 
@@ -27,6 +28,7 @@
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator; // "Bridge" or connection between your application and physical files
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+@property (nonatomic, retain) IBOutlet APTabBarControllerForSplitController *tabBarController;
 
 
 -(BOOL) userPresent;

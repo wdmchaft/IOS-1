@@ -12,6 +12,7 @@
 #import "startMenu.h"
 #import "Master.h"
 
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -20,6 +21,8 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize tabBarController=_tabBarController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -29,6 +32,7 @@
     
     UIViewController * main_menu = [[startMenu alloc] init];
     UIViewController * register_menu = [[Register alloc] init]; 
+   
 
    navigationController = [[UINavigationController alloc] initWithRootViewController:main_menu];
 

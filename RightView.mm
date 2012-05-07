@@ -20,7 +20,7 @@
 @synthesize newsDict;
 @synthesize detailItem;
 @synthesize navigationBar;
-@synthesize loadSong;
+
 @synthesize midi_Loader;
 @synthesize midi_player;
 @synthesize webView;
