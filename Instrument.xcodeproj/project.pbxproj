@@ -23,6 +23,7 @@
 		6713529B153CDD530098E83A /* start_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6713529A153CDD530098E83A /* start_bg.png */; };
 		671352A2153D0D880098E83A /* white_key.png in Resources */ = {isa = PBXBuildFile; fileRef = 671352A1153D0D880098E83A /* white_key.png */; };
 		672CF65F15585F770079CE59 /* Display_music.m in Sources */ = {isa = PBXBuildFile; fileRef = 672CF65E15585F770079CE59 /* Display_music.m */; };
+		672CF6691558F7950079CE59 /* Display_setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 672CF6681558F7950079CE59 /* Display_setting.m */; };
 		6777C4CF154A2D6E009CEAC0 /* ArpeggioView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */; };
 		6777C4D0154A2D6E009CEAC0 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C494154A2D6E009CEAC0 /* AudioOutput.m */; };
 		6777C4D1154A2D6E009CEAC0 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C496154A2D6E009CEAC0 /* BlackKeyView.m */; };
@@ -106,6 +107,8 @@
 		671352A1153D0D880098E83A /* white_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_key.png; sourceTree = "<group>"; };
 		672CF65D15585F770079CE59 /* Display_music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display_music.h; sourceTree = "<group>"; };
 		672CF65E15585F770079CE59 /* Display_music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display_music.m; sourceTree = "<group>"; };
+		672CF6671558F7950079CE59 /* Display_setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display_setting.h; sourceTree = "<group>"; };
+		672CF6681558F7950079CE59 /* Display_setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display_setting.m; sourceTree = "<group>"; };
 		6777C491154A2D6E009CEAC0 /* ArpeggioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpeggioView.h; sourceTree = "<group>"; };
 		6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ArpeggioView.mm; sourceTree = "<group>"; };
 		6777C493154A2D6E009CEAC0 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
@@ -413,6 +416,8 @@
 				67BAC4691549C51B004EC7CC /* square-wave.png */,
 				67BAC46A1549C51B004EC7CC /* mobilesynth.png */,
 				67BAC46B1549C51B004EC7CC /* mobilesynthViewController.xib */,
+				672CF6671558F7950079CE59 /* Display_setting.h */,
+				672CF6681558F7950079CE59 /* Display_setting.m */,
 				672CF65D15585F770079CE59 /* Display_music.h */,
 				672CF65E15585F770079CE59 /* Display_music.m */,
 				67BAC46C1549C51B004EC7CC /* MainWindow.xib */,
@@ -557,6 +562,7 @@
 				6777C4EF154A2D6E009CEAC0 /* TouchForwardingUIScrollView.m in Sources */,
 				6777C4F0154A2D6E009CEAC0 /* WhiteKeyView.m in Sources */,
 				672CF65F15585F770079CE59 /* Display_music.m in Sources */,
+				672CF6691558F7950079CE59 /* Display_setting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

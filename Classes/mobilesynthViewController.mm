@@ -30,7 +30,7 @@
 @synthesize keyboardScrollView;
 @synthesize controlScrollView;
 @synthesize controlPageControl;
-
+@synthesize menuScrollView;
 @synthesize oscillatorView;
 @synthesize oscillatorDetailView;
 @synthesize modulationView;
@@ -39,6 +39,9 @@
 @synthesize filterEnvelopeView;
 @synthesize arpeggioView;
 @synthesize menuPageControl;
+@synthesize first;
+@synthesize second;
+
 
 #define degreesToRadians(x) (M_PI * x / 180.0)
 
@@ -92,7 +95,7 @@ static float GetFrequencyForNote(int note) {
 
 // Setup the scrolable control panel
 - (void)loadControlViews { 
-  [[self view] addSubview:controlPageControl];
+  //[[self view] addSubview:controlPageControl];
 
   // Put the page control vertically in the top left corner.
   controlPageControl.transform =
@@ -100,7 +103,32 @@ static float GetFrequencyForNote(int note) {
     menuPageControl.transform =
     CGAffineTransformRotate(menuPageControl.transform, degreesToRadians(90));
 
-  
+   // first = [[Display_music alloc]init];
+    
+    NSMutableArray *menuViews = [[NSMutableArray alloc] init]; 
+    [menuViews addObject:first];
+    [menuViews addObject:second];
+
+    
+    //[menuViews addObject:controlPageControl];
+
+
+    CGRect frame = menuScrollView.frame;
+    frame.origin.x = 0;
+    for (int i = 0; i < [menuViews count]; ++i) {
+        frame.origin.y = frame.size.height * i;  
+        UIView* view = [menuViews objectAtIndex:i];
+        view.frame = frame;
+        [menuScrollView addSubview:view];
+    }
+    [menuPageControl setNumberOfPages:[menuViews count]];
+    
+    CGSize scrollSize = menuScrollView.frame.size;
+    scrollSize.height *= [menuViews count];
+    [menuScrollView setContentSize:scrollSize];
+    
+
+
   // New controls panels should be added here
   NSMutableArray *controlViews = [[NSMutableArray alloc] init]; 
   [controlViews addObject:oscillatorView];
@@ -111,7 +139,7 @@ static float GetFrequencyForNote(int note) {
   [controlViews addObject:filterEnvelopeView];
   [controlViews addObject:arpeggioView];
 
-  CGRect frame = controlScrollView.frame;
+   frame = controlScrollView.frame;
   frame.origin.x = 0;
   for (int i = 0; i < [controlViews count]; ++i) {
     frame.origin.y = frame.size.height * i;  
@@ -121,7 +149,7 @@ static float GetFrequencyForNote(int note) {
   }
   [controlPageControl setNumberOfPages:[controlViews count]];
   
-  CGSize scrollSize = controlScrollView.frame.size;
+  scrollSize = controlScrollView.frame.size;
   scrollSize.height *= [controlViews count];
   [controlScrollView setContentSize:scrollSize];
   
@@ -242,6 +270,18 @@ static float GetFrequencyForNote(int note) {
 
   [controlScrollView scrollRectToVisible:frame animated:YES];
 }
+
+- (IBAction)changeMenu:(id)sender {
+    int page = [menuPageControl currentPage];
+    // update the scroll view to the appropriate page
+    CGRect frame = menuScrollView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = frame.size.height * page;
+    
+    [menuScrollView scrollRectToVisible:frame animated:YES];
+}
+
+
 
 
 @end

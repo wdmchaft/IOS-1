@@ -26,6 +26,9 @@ namespace synth { class LowPass; }
 @class FilterView;
 @class ArpeggioView;
 @class TouchForwardingUIScrollView;
+@class Display_music;
+@class Display_setting;
+
 
 @interface mobilesynthViewController : UIViewController <KeyboardDelegate, SampleGenerator> {
  @private
@@ -43,7 +46,9 @@ namespace synth { class LowPass; }
   EnvelopeView* envelopeView;
   EnvelopeView* filterEnvelopeView;
   ArpeggioView* arpeggioView;
-
+  UIScrollView *menuScrollView;
+    Display_setting * first;  
+    Display_music *second;
 
   // Synthesizer components
   AudioOutput* output;
@@ -53,6 +58,8 @@ namespace synth { class LowPass; }
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
+@property (nonatomic, retain) IBOutlet UIScrollView *menuScrollView;
+
 @property (nonatomic, retain) IBOutlet UIScrollView *controlScrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *controlPageControl;
 @property (nonatomic, retain) IBOutlet UIPageControl *menuPageControl;
@@ -64,6 +71,9 @@ namespace synth { class LowPass; }
 @property (nonatomic, retain) IBOutlet EnvelopeView *envelopeView;
 @property (nonatomic, retain) IBOutlet EnvelopeView *filterEnvelopeView;
 @property (nonatomic, retain) IBOutlet ArpeggioView *arpeggioView;
+@property (nonatomic, retain) IBOutlet Display_setting *first;
+@property (nonatomic, retain) IBOutlet Display_music *second;
+
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
@@ -71,6 +81,8 @@ namespace synth { class LowPass; }
 
 // For control panel
 - (IBAction)changePage:(id)sender;
+- (IBAction)changeMenu:(id)sender;
+
 
 @end
 
