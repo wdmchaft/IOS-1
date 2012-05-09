@@ -1532,6 +1532,7 @@
 						<string key="NSFrame">{{61, 542}, {909, 217}}</string>
 						<reference key="NSSuperview" ref="64223907"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<reference key="IBUIBackgroundColor" ref="689275287"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -1548,7 +1549,7 @@
 						<string key="NSFrame">{{54, 29}, {876, 187}}</string>
 						<reference key="NSSuperview" ref="64223907"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="850241827"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -1755,7 +1756,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{248, 123}, {72, 37}}</string>
 								<reference key="NSSuperview" ref="42725980"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="856466509"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -1791,7 +1791,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{382, 123}, {72, 37}}</string>
 								<reference key="NSSuperview" ref="42725980"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="862433286"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -1814,7 +1813,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{513, 123}, {72, 37}}</string>
 								<reference key="NSSuperview" ref="42725980"/>
-								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1834,7 +1832,6 @@
 						</object>
 						<string key="NSFrame">{{33, 7}, {766, 173}}</string>
 						<reference key="NSSuperview" ref="163383768"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="399328467"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -1844,7 +1841,6 @@
 				</object>
 				<string key="NSFrameSize">{876, 187}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="42725980"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<reference key="IBUIBackgroundColor" ref="255281422"/>
@@ -1912,14 +1908,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">keyboardScrollView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="850241827"/>
-					</object>
-					<int key="connectionID">386</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="64223907"/>
@@ -1973,6 +1961,14 @@
 						<reference key="destination" ref="680616858"/>
 					</object>
 					<int key="connectionID">435</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">keyboardScrollView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="850241827"/>
+					</object>
+					<int key="connectionID">386</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -2999,11 +2995,6 @@
 						<reference key="parent" ref="64223907"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="850241827"/>
-						<reference key="parent" ref="64223907"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">418</int>
 						<reference key="object" ref="974839418"/>
 						<object class="NSMutableArray" key="children">
@@ -3092,6 +3083,11 @@
 						<int key="objectID">456</int>
 						<reference key="object" ref="862433286"/>
 						<reference key="parent" ref="42725980"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">15</int>
+						<reference key="object" ref="850241827"/>
+						<reference key="parent" ref="64223907"/>
 					</object>
 				</object>
 			</object>
@@ -3312,7 +3308,7 @@
 				<reference key="dict.values" ref="360949347"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">459</int>
+			<int key="maxID">465</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3394,14 +3390,77 @@
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">songScrollView</string>
-						<string key="NS.object.0">UIScrollView</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>ScrollHolderView</string>
+							<string>imageFive</string>
+							<string>imageFour</string>
+							<string>imageOne</string>
+							<string>imageThree</string>
+							<string>imageTwo</string>
+							<string>musicScoreView</string>
+							<string>songScrollView</string>
+						</object>
+						<object class="NSArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UIScrollView</string>
+							<string>UIImage</string>
+							<string>UIImage</string>
+							<string>UIImage</string>
+							<string>UIImage</string>
+							<string>UIImage</string>
+							<string>UIImageView</string>
+							<string>UIScrollView</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">songScrollView</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">songScrollView</string>
-							<string key="candidateClassName">UIScrollView</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>ScrollHolderView</string>
+							<string>imageFive</string>
+							<string>imageFour</string>
+							<string>imageOne</string>
+							<string>imageThree</string>
+							<string>imageTwo</string>
+							<string>musicScoreView</string>
+							<string>songScrollView</string>
+						</object>
+						<object class="NSArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">ScrollHolderView</string>
+								<string key="candidateClassName">UIScrollView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageFive</string>
+								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageFour</string>
+								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageOne</string>
+								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageThree</string>
+								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageTwo</string>
+								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">musicScoreView</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">songScrollView</string>
+								<string key="candidateClassName">UIScrollView</string>
+							</object>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

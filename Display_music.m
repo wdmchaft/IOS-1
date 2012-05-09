@@ -12,11 +12,21 @@
 @synthesize songScrollView;
 @synthesize midi_Loader;
 @synthesize midi_player;
+@synthesize musicScoreView;
+@synthesize imageOne, imageTwo, imageThree, imageFour, imageFive;
+@synthesize ScrollHolderView;
+
+
+
+
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+      
+        
+        
     }
     return self;
 }
@@ -32,8 +42,6 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
 - (void)drawRect:(CGRect)rect
 {
     UILabel *section_title=[[UILabel alloc]initWithFrame:CGRectMake(400, 15 ,100,20 )];
-   
-
     
     section_title.text=@"Song Name:";
     section_title.textColor =[UIColor whiteColor];
@@ -86,11 +94,46 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
     CGSize scrollSize = songScrollView.frame.size;
     scrollSize.width *= [SongSelectViews count];
     [songScrollView setContentSize:scrollSize];
-   
     frame.size.width = songScrollView.frame.size.width - 20;
+    
+    //Handle Score Image
+    
+    
+    imageOne=	[UIImage imageNamed:@"02astimegoesby.png"] ;
+    imageTwo=	[UIImage imageNamed:@"alleycat.png"] ;
+    imageThree=	[UIImage imageNamed:@"br_im2_format0.png"] ;
+    imageFour=	[UIImage imageNamed:@"chpn_op7_2.png"] ;
+    imageFive=	[UIImage imageNamed:@"mos_op36_6_format0.png"] ;
+    
+    
+    
+    musicScoreView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 200 ,800,700 )];
+    
+    
+    frame = musicScoreView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = 0;
+    frame.size.width = 867;
+    
+    
+    musicScoreView.image = imageOne;
+    ScrollHolderView = [[UIScrollView alloc]initWithFrame:CGRectMake(34, 224 ,876,700 )];
+    [ScrollHolderView addSubview:musicScoreView];
+
+    
+    scrollSize = ScrollHolderView.frame.size;
+    scrollSize.width *= 1;
+    [ScrollHolderView setContentSize:scrollSize];
+    frame.size.height = ScrollHolderView.frame.size.height - 20;
+    
+
+
+    
+    
     
     [self addSubview:songScrollView];
     [self addSubview:section_title];
+    [self addSubview:ScrollHolderView];
 
     
     
