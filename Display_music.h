@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioToolbox/MusicPlayer.h"
 
-@interface Display_music : UIView
+
+@interface Display_music : UIView{
+    
+    
+    UIScrollView *songScrollView;
+
+}
+@property (nonatomic, retain) IBOutlet UIScrollView *songScrollView;
+-(IBAction)buttonTrigger:(id)sender;
+@property (nonatomic) MusicSequence midi_Loader;
+@property (nonatomic) MusicPlayer midi_player;
 
 @end

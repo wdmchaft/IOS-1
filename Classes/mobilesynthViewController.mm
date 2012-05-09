@@ -106,8 +106,8 @@ static float GetFrequencyForNote(int note) {
    // first = [[Display_music alloc]init];
     
     NSMutableArray *menuViews = [[NSMutableArray alloc] init]; 
-    [menuViews addObject:first];
     [menuViews addObject:second];
+    [menuViews addObject:first];
 
     
     //[menuViews addObject:controlPageControl];
@@ -182,6 +182,7 @@ static float GetFrequencyForNote(int note) {
   
   // Flash as a visual indicator to the user
   [controlScrollView flashScrollIndicators];
+  [menuScrollView flashScrollIndicators];
   [keyboardScrollView flashScrollIndicators];   
 }
 
@@ -254,11 +255,17 @@ static float GetFrequencyForNote(int note) {
   CGFloat pageHeight = controlScrollView.frame.size.height;
   int page = floor((controlScrollView.contentOffset.y - pageHeight / 2) / pageHeight) + 1;
   [controlPageControl setCurrentPage:page];
+    
+     pageHeight = menuScrollView.frame.size.height;
+     page = floor((menuScrollView.contentOffset.y - pageHeight / 2) / pageHeight) + 1;
+    [menuPageControl setCurrentPage:page];
+    
 }
 
 // At the end of scroll animation, reset the boolean used when scrolls originate from the UIPageControl
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
   [self syncPageControl];
+   // NSLog(@"sdfsf");
 }
 
 - (IBAction)changePage:(id)sender {

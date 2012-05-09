@@ -172,6 +172,7 @@
 		678439B41526B9EE009744CC /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textfield.png; path = ../textfield.png; sourceTree = "<group>"; };
 		678439C51527CDED009744CC /* CoreDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataAccess.h; sourceTree = "<group>"; };
 		678439C61527CDED009744CC /* CoreDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataAccess.m; sourceTree = "<group>"; };
+		67B661E7155A0F6A00A9A056 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
 		67BAC45C1549C4DE004EC7CC /* mobilesynth_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobilesynth_Prefix.pch; sourceTree = "<group>"; };
 		67BAC4601549C51B004EC7CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		67BAC4611549C51B004EC7CC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		670BA810152024F80063ADE0 = {
 			isa = PBXGroup;
 			children = (
+				67B661E7155A0F6A00A9A056 /* RightView.h */,
 				67075171153E165A004DEB64 /* newBG.png */,
 				671352A1153D0D880098E83A /* white_key.png */,
 				6777C490154A2D6E009CEAC0 /* Classes */,
