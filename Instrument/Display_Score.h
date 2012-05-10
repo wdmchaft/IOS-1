@@ -19,12 +19,13 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIImageView *musicScoreView;
-@property (nonatomic, retain) IBOutlet UIImage *imageOne;
-@property (nonatomic, retain) IBOutlet UIImage *imageTwo;
-@property (nonatomic, retain) IBOutlet UIImage *imageThree;
-@property (nonatomic, retain) IBOutlet UIImage *imageFour;
-@property (nonatomic, retain) IBOutlet UIImage *imageFive;
+@property (nonatomic, strong) IBOutlet UIImageView *musicScoreView;
+@property (nonatomic, strong) IBOutlet UIImage *imageOne;
+@property (nonatomic, strong) IBOutlet UIImage *imageTwo;
+@property (nonatomic, strong) IBOutlet UIImage *imageThree;
+@property (nonatomic, strong) IBOutlet UIImage *imageFour;
+@property (nonatomic, strong) IBOutlet UIImage *imageFive;
+@property (nonatomic, strong) IBOutlet UIImage *image_selected;
 
 
 @property (nonatomic, retain) IBOutlet UIScrollView *ScrollHolderView;

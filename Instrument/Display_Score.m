@@ -13,6 +13,9 @@
 @synthesize musicScoreView;
 @synthesize imageOne, imageTwo, imageThree, imageFour, imageFive;
 @synthesize ScrollHolderView;
+@synthesize image_selected;
+
+
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -20,6 +23,24 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        NSLog(@"Called");
+           
+        
+        
+        
+
+    }
+    return self;
+}
+
+
+- (id)init{
+    self = [super init];
+    if (self) {
+        // Initialization code
+               
+        
+        
     }
     return self;
 }
@@ -27,24 +48,45 @@
 
 -(void)change_score:(int)score_number{
     
-    NSLog(@"num sdfsdfsdf");
+    NSLog(@"num %d", score_number);
     switch (score_number) {
         case 1:
+          
+          
             musicScoreView.image = imageOne;
-           // [imgView setImage:imageOne];
-         
+            [musicScoreView setImage:imageOne];
+
+            [musicScoreView setNeedsDisplay];
+           
+
+
+            NSLog(@"1");
+
 
             break;
         case 2:
-            //musicScoreView.image = imageTwo;
-            [musicScoreView setImage:imageTwo];
-         
+            musicScoreView.image = imageOne;
+            [musicScoreView setImage:imageOne];
+
+            [musicScoreView setNeedsDisplay];
+            
+
+
+            NSLog(@"2");
+
 
             break;
         case 3:
-            //musicScoreView.image = imageThree;
-            [musicScoreView setImage:imageThree];
           
+           
+            musicScoreView.image = imageOne;
+            [musicScoreView setImage:imageOne];
+            [musicScoreView setNeedsDisplay];
+         
+           
+
+            NSLog(@"3");
+
 
             break;
         case 4:
@@ -72,15 +114,9 @@
     
     
     
-    imageOne=	[UIImage imageNamed:@"02astimegoesby.png"] ;
-    imageTwo=	[UIImage imageNamed:@"alleycat.png"] ;
-    imageThree=	[UIImage imageNamed:@"br_im2_format0.png"] ;
-    imageFour=	[UIImage imageNamed:@"chpn_op7_2.png"] ;
-    imageFive=	[UIImage imageNamed:@"mos_op36_6_format0.png"] ;
-    
-    
-  
-    
+    NSLog(@"Called");
+         
+    /*
     CGRect frameMusicScore = musicScoreView.frame;
     frameMusicScore = musicScoreView.frame;
     frameMusicScore.origin.x = 0;
@@ -89,9 +125,21 @@
     frameMusicScore.size.height = 800;
     
     musicScoreView.frame = frameMusicScore;
-    musicScoreView.image = imageOne;
+   
+    */
+    // Initialization code
+   
     
+    imageOne=	[UIImage imageNamed:@"02astimegoesby.png"] ;
+    imageTwo=	[UIImage imageNamed:@"alleycat.png"] ;
+    imageThree=	[UIImage imageNamed:@"br_im2_format0.png"] ;
+    imageFour=	[UIImage imageNamed:@"chpn_op7_2.png"] ;
+    imageFive=	[UIImage imageNamed:@"mos_op36_6_format0.png"] ;
     
+    image_selected= imageFive;
+    musicScoreView.image = image_selected;
+
+
     
     CGSize scrollHolderSize = ScrollHolderView.frame.size;
     scrollHolderSize.height *= 3;
@@ -100,8 +148,6 @@
     
     
     
-  
-
 
 
     

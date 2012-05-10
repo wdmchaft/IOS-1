@@ -28,7 +28,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        user_table.backgroundColor = [UIColor colorWithRed:0. green:0.39 blue:0.106 alpha:.2];
     }
     return self;
 }
@@ -52,8 +51,8 @@
     contents = [contents valueForKey:@"user_id"];
     self.users= contents;
 
-    user_table.backgroundColor = [UIColor clearColor];
-    
+    //user_table.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
+    [user_table setBackgroundColor:[UIColor blackColor]];
 }
 
 -(void)tableView:(UITableView *)tableView

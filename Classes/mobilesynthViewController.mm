@@ -193,12 +193,16 @@ static float GetFrequencyForNote(int note) {
   [super viewDidLoad];
   [self loadControlViews];
 
+    
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"bg.png"]];
+
   CGRect keyboardViewFrame;
   keyboardViewFrame.origin.x = 0;
   keyboardViewFrame.origin.y = 0;
   keyboardViewFrame.size.width = 800;
   // Leave some empty space for scrolling
-  keyboardViewFrame.size.height = keyboardScrollView.frame.size.height - 20;
+  keyboardViewFrame.size.height = keyboardScrollView.frame.size.height;
   keyboardView = [[KeyboardView alloc] initWithFrame:keyboardViewFrame
                                      withOctaveCount:2];
   [keyboardView setKeyboardDelegate:self];

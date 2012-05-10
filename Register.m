@@ -86,6 +86,8 @@
         [self.navigationController popViewControllerAnimated:YES];//not to see pop
     }
     if([buttonTitle isEqualToString:@"Cancel"]){
+        [self.navigationController setNavigationBarHidden:NO animated:NO];
+
         [self.navigationController popViewControllerAnimated:YES];//not to see pop
     }
         

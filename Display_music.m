@@ -42,9 +42,14 @@ NSString * selected_song=@"    As Time Goes By" ;
 {
     UILabel *section_title=[[UILabel alloc]initWithFrame:CGRectMake(400, 15 ,100,20 )];
     
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.png"]];
+    [self addSubview:background];
+    [self sendSubviewToBack:background];
+
+    
     section_title.text=@"Song Name:";
     section_title.textColor =[UIColor whiteColor];
-    section_title.BackgroundColor =[UIColor blackColor];
+    section_title.BackgroundColor =[UIColor clearColor];
    
     songScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(300, 25 ,300,100 )];
 
@@ -67,14 +72,14 @@ NSString * selected_song=@"    As Time Goes By" ;
         
         [songButton setTitle: [SongNames objectAtIndex:i] forState: UIControlStateNormal];
         [songButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        songButton.backgroundColor = [UIColor blackColor];
+        songButton.backgroundColor = [UIColor clearColor];
         [songButton setTitleColor:[UIColor redColor] forState:(UIControlStateHighlighted+UIControlStateSelected)];
 
         
         [SongSelectViews addObject:songButton];
     }
     
-    scoreView = [[Display_Score alloc]init] ;
+    scoreView = [[Display_Score alloc]initWithFrame:CGRectMake(100, 250 ,300,100 )] ;
    
 
     
