@@ -47,8 +47,8 @@ namespace synth { class LowPass; }
   EnvelopeView* filterEnvelopeView;
   ArpeggioView* arpeggioView;
   UIScrollView *menuScrollView;
-    Display_setting * first;  
-    Display_music *second;
+  Display_setting * first;  
+  Display_music *second;
 
   // Synthesizer components
   AudioOutput* output;

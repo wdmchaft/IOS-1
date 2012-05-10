@@ -8,38 +8,27 @@
 
 #import <UIKit/UIKit.h>
 #import "AudioToolbox/MusicPlayer.h"
+#import "Display_Score.h"
 
+//@class Display_score;
 
 @interface Display_music : UIView{
     
     
     UIScrollView *songScrollView;
-    UIScrollView *ScrollHolderView;
-
-    UIImageView *musicScoreView;
+    Display_Score * scoreView;  
     
 
 }
 @property (nonatomic, retain) IBOutlet UIScrollView *songScrollView;
-@property (nonatomic, retain) IBOutlet UIScrollView *ScrollHolderView;
-
-@property (nonatomic, retain) IBOutlet UIImageView *musicScoreView;
-
-@property (nonatomic, retain) IBOutlet UIImage *imageOne;
-@property (nonatomic, retain) IBOutlet UIImage *imageTwo;
-@property (nonatomic, retain) IBOutlet UIImage *imageThree;
-@property (nonatomic, retain) IBOutlet UIImage *imageFour;
-@property (nonatomic, retain) IBOutlet UIImage *imageFive;
-
-
-
-
-
+@property (nonatomic, strong) IBOutlet Display_Score * scoreView;  
 
 
 
 -(IBAction)buttonTrigger:(id)sender;
+
 @property (nonatomic) MusicSequence midi_Loader;
 @property (nonatomic) MusicPlayer midi_player;
+
 
 @end

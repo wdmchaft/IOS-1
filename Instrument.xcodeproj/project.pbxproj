@@ -29,6 +29,7 @@
 		673D4C13155ADE7F00EC840B /* br_im2_format0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 673D4C0E155ADE7F00EC840B /* br_im2_format0.pdf */; };
 		673D4C14155ADE7F00EC840B /* chpn_op7_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 673D4C0F155ADE7F00EC840B /* chpn_op7_2.png */; };
 		673D4C15155ADE7F00EC840B /* mos_op36_6_format0.png in Resources */ = {isa = PBXBuildFile; fileRef = 673D4C10155ADE7F00EC840B /* mos_op36_6_format0.png */; };
+		673D4C18155B4E9900EC840B /* Display_Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 673D4C17155B4E9900EC840B /* Display_Score.m */; };
 		6777C4CF154A2D6E009CEAC0 /* ArpeggioView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */; };
 		6777C4D0154A2D6E009CEAC0 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C494154A2D6E009CEAC0 /* AudioOutput.m */; };
 		6777C4D1154A2D6E009CEAC0 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C496154A2D6E009CEAC0 /* BlackKeyView.m */; };
@@ -119,6 +120,8 @@
 		673D4C0E155ADE7F00EC840B /* br_im2_format0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = br_im2_format0.pdf; sourceTree = "<group>"; };
 		673D4C0F155ADE7F00EC840B /* chpn_op7_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chpn_op7_2.png; sourceTree = "<group>"; };
 		673D4C10155ADE7F00EC840B /* mos_op36_6_format0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mos_op36_6_format0.png; sourceTree = "<group>"; };
+		673D4C16155B4E9900EC840B /* Display_Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display_Score.h; sourceTree = "<group>"; };
+		673D4C17155B4E9900EC840B /* Display_Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display_Score.m; sourceTree = "<group>"; };
 		6777C491154A2D6E009CEAC0 /* ArpeggioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpeggioView.h; sourceTree = "<group>"; };
 		6777C492154A2D6E009CEAC0 /* ArpeggioView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ArpeggioView.mm; sourceTree = "<group>"; };
 		6777C493154A2D6E009CEAC0 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
@@ -283,6 +286,8 @@
 				672CF6681558F7950079CE59 /* Display_setting.m */,
 				672CF65D15585F770079CE59 /* Display_music.h */,
 				672CF65E15585F770079CE59 /* Display_music.m */,
+				673D4C16155B4E9900EC840B /* Display_Score.h */,
+				673D4C17155B4E9900EC840B /* Display_Score.m */,
 				670BA82E152024F80063ADE0 /* AppDelegate.h */,
 				678439C51527CDED009744CC /* CoreDataAccess.h */,
 				67BBD3E015280B3E00F74374 /* LeftView.h */,
@@ -593,6 +598,7 @@
 				6777C4F0154A2D6E009CEAC0 /* WhiteKeyView.m in Sources */,
 				672CF65F15585F770079CE59 /* Display_music.m in Sources */,
 				672CF6691558F7950079CE59 /* Display_setting.m in Sources */,
+				673D4C18155B4E9900EC840B /* Display_Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

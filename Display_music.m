@@ -6,15 +6,14 @@
 //  Copyright (c) 2012 Tufts University. All rights reserved.
 //
 
+#import "Display_Score.h"
 #import "Display_music.h"
 
 @implementation Display_music
 @synthesize songScrollView;
 @synthesize midi_Loader;
 @synthesize midi_player;
-@synthesize musicScoreView;
-@synthesize imageOne, imageTwo, imageThree, imageFour, imageFive;
-@synthesize ScrollHolderView;
+@synthesize scoreView;
 
 
 
@@ -37,7 +36,7 @@
 
 
 
-NSString * selected_song=@"  Mary Had A little lamb" ; 
+NSString * selected_song=@"    As Time Goes By" ; 
 
 - (void)drawRect:(CGRect)rect
 {
@@ -46,11 +45,13 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
     section_title.text=@"Song Name:";
     section_title.textColor =[UIColor whiteColor];
     section_title.BackgroundColor =[UIColor blackColor];
+   
     songScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(300, 25 ,300,100 )];
+
     
     NSMutableArray *SongNames = [[NSMutableArray alloc] init]; 
+    [SongNames addObject:@"    As Time Goes By"];
     [SongNames addObject:@"  Mary Had A little lamb"];
-    [SongNames addObject:@"         As Time Goes By"];
     [SongNames addObject:@"Flight Of The Bumble Bee"];
     [SongNames addObject:@"Carolina In The Morning"];
     [SongNames addObject:@" Alley Cat"];
@@ -73,6 +74,7 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
         [SongSelectViews addObject:songButton];
     }
     
+    scoreView = [[Display_Score alloc]init] ;
    
 
     
@@ -97,43 +99,13 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
     frame.size.width = songScrollView.frame.size.width - 20;
     
     //Handle Score Image
-    
-    
-    imageOne=	[UIImage imageNamed:@"02astimegoesby.png"] ;
-    imageTwo=	[UIImage imageNamed:@"alleycat.png"] ;
-    imageThree=	[UIImage imageNamed:@"br_im2_format0.png"] ;
-    imageFour=	[UIImage imageNamed:@"chpn_op7_2.png"] ;
-    imageFive=	[UIImage imageNamed:@"mos_op36_6_format0.png"] ;
-    
-    
-    
-    musicScoreView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 200 ,800,700 )];
-    
-    
-    frame = musicScoreView.frame;
-    frame.origin.x = 0;
-    frame.origin.y = 0;
-    frame.size.width = 867;
-    
-    
-    musicScoreView.image = imageOne;
-    ScrollHolderView = [[UIScrollView alloc]initWithFrame:CGRectMake(34, 224 ,876,700 )];
-    [ScrollHolderView addSubview:musicScoreView];
-
-    
-    scrollSize = ScrollHolderView.frame.size;
-    scrollSize.width *= 1;
-    [ScrollHolderView setContentSize:scrollSize];
-    frame.size.height = ScrollHolderView.frame.size.height - 20;
-    
-
-
-    
-    
-    
+        
+      
     [self addSubview:songScrollView];
     [self addSubview:section_title];
-    [self addSubview:ScrollHolderView];
+    [self addSubview:scoreView];
+
+    
 
     
     
@@ -172,12 +144,40 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
         }
         NSLog(@"%ld", (long int)isPlaying);
         
-        
-        
-        
+    
         
     }
 
+    
+    if([buttonTitle isEqualToString:@"Learn"]){
+        
+        if([selected_song isEqualToString:@"  Mary Had A little lamb"] ){
+         [scoreView change_score:1];
+            NSLog(@"One");
+
+
+        }
+        
+        if([selected_song isEqualToString:@"    As Time Goes By"] ){
+            [scoreView change_score:2];
+            NSLog(@"Clicked");
+
+        }
+        
+        if([selected_song isEqualToString:@"Flight Of The Bumble Bee"] )
+            [scoreView change_score:3];
+
+        
+        if([selected_song isEqualToString:@"Carolina In The Morning"] )
+            [scoreView change_score:4];
+
+        
+        if([selected_song isEqualToString:@" Alley Cat"] )
+            [scoreView change_score:5];
+
+
+        
+    }
     
     if([buttonTitle isEqualToString:@"Stop"]){
         
@@ -214,7 +214,7 @@ NSString * selected_song=@"  Mary Had A little lamb" ;
     if([selected_song isEqualToString:@"  Mary Had A little lamb"] )
         filename = @"mary";
     
-    if([selected_song isEqualToString:@"         As Time Goes By"] )
+    if([selected_song isEqualToString:@"    As Time Goes By"] )
         filename = @"02astimegoesby";
     
     if([selected_song isEqualToString:@"Flight Of The Bumble Bee"] )
